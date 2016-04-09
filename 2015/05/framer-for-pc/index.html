@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+ <html lang="en"><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=5.0"/><title>Framer.js for PC &amp; Linux users | Jon Gold</title><link rel="stylesheet" href="https://npmcdn.com/tachyons@4.0.0-beta.12/css/tachyons.min.css"/></head><body class="landing-page"><div id="react-mount"><div style="max-width:960px;margin-left:auto;margin-right:auto;" data-reactid=".1zve8f5tudc" data-react-checksum="-198866614"><h3 class="sans-serif fw8 f5 ph3" data-reactid=".1zve8f5tudc.0:0"><a style="text-decoration:none;color:inherit;" class="" href="/" data-reactid=".1zve8f5tudc.0:0.0">Jon Gold</a></h3><div data-reactid=".1zve8f5tudc.0:1"><div class="sans-serif ph3 pv2 pv5-ns cf" data-reactid=".1zve8f5tudc.0:1.0"><header class="fn fl-ns w-50-ns pr4-ns" data-reactid=".1zve8f5tudc.0:1.0.0"><h1 class="lh-title fw8 f3 f2-ns measure" data-reactid=".1zve8f5tudc.0:1.0.0.0">Framer.js for PC &amp; Linux users</h1><time class="f6 ttu tracked gray" data-reactid=".1zve8f5tudc.0:1.0.0.1"><span data-reactid=".1zve8f5tudc.0:1.0.0.1.0">Posted </span><span data-reactid=".1zve8f5tudc.0:1.0.0.1.1">May 12, 2015</span></time></header><div class="fn fl-ns w-50-ns mt4 mt0-ns measure lh-copy" data-reactid=".1zve8f5tudc.0:1.0.1"><p>One of the most common questions I see in the <a href="https://www.facebook.com/groups/framerjs/">Framer Facebook group</a> is people wondering whether you need to use a Mac to run Framer. That’s understandable — the website has a screenshot of a Mac app, a download button, and a caption saying ‘available for Mac’. Here’s the thing — you can use Framer and join this wonderful community &amp; way of working on <em>any platform</em>. Let me explain…</p>
+<p>The app you see in the screenshots on the <a href="http://framerjs.com/">Framer website</a> is ‘Framer Studio’. It’s a paid app, for OSX only. The thing that powers it though—Framer.js—is open source, and available for free on GitHub.</p>
+<p>To save you having to compile the source, Framer provide a simple <a href="http://framerjs.com/static/downloads/Framer.zip">.zip file</a> to get you started - including all of the JavaScript you need, and an HTML file to open in your browser. It’s that simple to get started with Framer on Windows or Linux!</p>
+<h2>So what’s Framer Studio? Where’s that lovely UI?</h2>
+<p>Framer Studio is a collection of tools around Framer.js itself. Some of these are unique, some of them you can replicate yourself on <em>any computer</em>. It won’t be as smooth as using Framer Studio on a Mac, but certainly easier than making a trip to the Apple Store.</p>
+<p>Some of the notable features:</p>
+<ul>
+<li>CoffeeScript compilation</li>
+<li>LiveReload</li>
+</ul>
+<p>More on those in a second. Some features that you can get an approximation of in  any editor (e.g. <a href="http://www.sublimetext.com/">Sublime Text</a>):</p>
+<ul>
+<li>Syntax highlighting</li>
+<li>Snippets</li>
+<li><a href="https://github.com/awt2542/SublimeCompletionFramerjs">Autocomplete</a></li>
+</ul>
+<p>And then some more nifty things that are unique to the Mac app:</p>
+<ul>
+<li>Templates</li>
+<li>Sharing</li>
+<li>Presentation view</li>
+<li>Mirror</li>
+<li>Zoom</li>
+<li>Sketch/Photoshop importing</li>
+</ul>
+<p>Framer Studio is definitely <strong>optional</strong>, but the features you get are <strong>really nice</strong>.</p>
+<p>With that said: CoffeeScript!</p>
+<h2>Why does my code break when I try to run the examples from the website?</h2>
+<p><a href="http://framerjs.com/static/downloads/Framer.zip">That link</a> you just download is in <strong>JavaScript</strong>. Framer Studio, and all of the examples on the website, are in <strong>CoffeeScript</strong>.</p>
+<p><a href="http://coffeescript.org/">CoffeeScript</a> is a version of JavaScript with a bunch of nifty features, but most importantly for us, it gets rid of a bunch of brackets. JavaScript <strong>needs_</strong> those brackets.</p>
+<p>For example, the first page of <a href="http://framerjs.com/learn/basics/">Framer Basics</a> shows you how to create a simple layer.</p>
+<pre><code>layerA = <span class="hljs-keyword">new</span> Layer
+<span class="hljs-symbol">  x:</span> <span class="hljs-number">0</span>, <span class="hljs-string">y:</span> <span class="hljs-number">0</span>, <span class="hljs-string">width:</span> <span class="hljs-number">100</span>, <span class="hljs-string">height:</span> <span class="hljs-number">100</span>
+</code></pre>
+<p>If you try to add that to the <code>app.js</code> file you downloaded, you’ll be confronted with some nasty errors. In JavaScript it should look more like this:</p>
+<pre><code>var layerA = new Layer({
+<span class="hljs-symbol">  x:</span> <span class="hljs-number">0</span>,
+<span class="hljs-symbol">  y:</span> <span class="hljs-number">0</span>,
+<span class="hljs-symbol">  width:</span> <span class="hljs-number">100</span>,
+<span class="hljs-symbol">  height:</span> <span class="hljs-number">100</span>
+});
+</code></pre>
+<p>Not too different, but enough to make your web browser complain! Let’s look at a more complex example and then I’ll show you how to fix it :)</p>
+<pre><code>layerA<span class="hljs-selector-class">.animate</span> 
+  properties:
+    x:<span class="hljs-number">200</span>
+  curve: <span class="hljs-string">"ease-in-out"</span>
+
+layerA<span class="hljs-selector-class">.on</span> Events<span class="hljs-selector-class">.AnimationEnd</span>, -&gt;
+  layerA<span class="hljs-selector-class">.animate</span>
+    properties:
+      x:<span class="hljs-number">100</span>
+    curve: <span class="hljs-string">"ease-in-out"</span>
+</code></pre>
+<p>In JavaScript that would be more like</p>
+<pre><code><span class="hljs-selector-tag">layerA</span><span class="hljs-selector-class">.animate</span>({
+  <span class="hljs-attribute">properties</span>: {
+    <span class="hljs-attribute">x</span>: <span class="hljs-number">200</span>
+  },
+  <span class="hljs-attribute">curve</span>: <span class="hljs-string">"ease-in-out"</span>
+});
+
+<span class="hljs-selector-tag">layerA</span><span class="hljs-selector-class">.on</span>(Events.AnimationEnd, function() {
+  <span class="hljs-selector-tag">layerA</span><span class="hljs-selector-class">.animate</span>({
+    <span class="hljs-attribute">properties</span>: {
+      <span class="hljs-attribute">x</span>: <span class="hljs-number">100</span>
+    },
+    <span class="hljs-attribute">curve</span>: <span class="hljs-string">"ease-in-out"</span>
+  });
+});
+</code></pre>
+<p>At this point, there’s a few things you could do.</p>
+<ul>
+<li>You could translate every line of CoffeeScript you read on the Framer website &amp; in other peoples’ code into JavaScript in your head.</li>
+<li>You could use a website like <a href="http://js2.coffee/">JS2Coffee</a> and get it to translate itself, then copy &amp; paste that into your project.</li>
+<li>Or, you can just set up CoffeeScript on your PC.</li>
+</ul>
+<p>I really recommend the third option. If you’re a relative newcomer to JavaScript, you don’t need the added hassle of hoping your code matches up to the code you’re reading in a tutorial. It’s much nicer to use the same language as the rest of the community.</p>
+<p>Luckily, it’s pretty easy to get it all wired up.</p>
+<h2>The easy way</h2>
+<p>Whilst there’s nothing like Framer Studio for Windows or Linux, there are some other nice apps that can help us out.</p>
+<p><a href="https://prepros.io/">Prepros</a> is available for Windows, Linux &amp; Mac, and helps you compile CoffeeScript (as well as Sass, LESS, Jade &amp; others — you can use this for lots of projects besides Framer). To get started, install &amp; open the app, then add the <code>Project</code> folder from the .zip you downloaded earlier.</p>
+<p>Next, rename <code>app.js</code> to <code>app.coffee</code>, and replace its contents with some CoffeeScript. Here’s what it converts to:</p>
+<pre><code>iconLayer = new Layer width:<span class="hljs-number">256</span>, height:<span class="hljs-number">256</span>, image:<span class="hljs-string">"images/icon.png"</span>
+iconLayer.center()
+
+# Define a <span class="hljs-keyword">set</span> of <span class="hljs-comment">states with names (the original state is</span> <span class="hljs-comment">'default'</span><span class="hljs-comment">)</span>
+iconLayer.states.add
+  second: {y:100, scale:0.6, rotationZ:100}
+  third:  {y:300, scale:1.3, blur:4}
+  fourth: {y:200, scale:0.9, blur:2, rotationZ:200}
+
+# <span class="hljs-keyword">Set</span> <span class="hljs-comment">the default animation options</span>
+iconLayer.states.animationOptions <span class="hljs-comment">=</span>
+  curve: <span class="hljs-string">"spring(500,12,0)"</span>
+
+# On <span class="hljs-comment">a click, go to the next state</span>
+iconLayer.on <span class="hljs-comment">Events.Click, -&gt;</span>
+  iconLayer.states.next()
+</code></pre>
+<p>Then…</p>
+<ul>
+<li>Drag your folder into Prepros.</li>
+<li>Click on <code>app.coffee</code></li>
+<li>Make sure ‘auto compile’ is checked</li>
+<li>Click ‘process file’</li>
+<li>Click ‘Live preview’ in the toolbar</li>
+</ul>
+<p>Your browser should open, and your prototype should be running. From there, change anything you want to in <code>app.coffee</code> and your browser should magically reload.</p>
+<p>There are some other options for compiling Coffeescript on Windows - feel free to use another GUI if that’s what you do already, but Prepress is pretty great for an open source tool.</p>
+<p>You could also go for more fine-grained control by compiling your Coffeescript etc yourself with something like <code>gulp</code> or <code>grunt</code>, but remember, the goal is to be prototyping as quickly as possible, not getting bogged down in tool configuration :)</p>
+</div></div><footer class="ph3 pv3 fn" data-reactid=".1zve8f5tudc.0:1.1"><noscript data-reactid=".1zve8f5tudc.0:1.1.0"></noscript><p class="measure sans-serif lh-copy mb4 mb6-ns" data-reactid=".1zve8f5tudc.0:1.1.1"><a href="http://jon.gold" class="b black" data-reactid=".1zve8f5tudc.0:1.1.1.0">Jon Gold</a><span data-reactid=".1zve8f5tudc.0:1.1.1.1"> is an inter-disciplinary designer, engineer, adventurer &amp; weirdo; travelling the world and building future design tools &amp; systems. You’ll probably have more fun looking at his </span><a href="http://jon.gold" class="b black" data-reactid=".1zve8f5tudc.0:1.1.1.2">new worldwide website</a><span data-reactid=".1zve8f5tudc.0:1.1.1.3">, or following </span><a class="b black" href="https://twitter.com/jongold" data-reactid=".1zve8f5tudc.0:1.1.1.4">his best self on Twitter.</a></p></footer></div><span style="display:block;clear:both;" data-reactid=".1zve8f5tudc.1"> </span></div></div><script src="/bundle.js"></script></body></html>
