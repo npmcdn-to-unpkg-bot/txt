@@ -40,7 +40,6 @@ const pageExists = both(
 class BlogIndex extends React.Component {
   render () {
     const pageLinks = compose(
-      take(5),
       map(pageToLink),
       reverse,
       sortBy(path(['data', 'date'])),
@@ -54,7 +53,7 @@ class BlogIndex extends React.Component {
           <ul className="list pl0">
             {pageLinks}
           </ul>
-          <Link className={linkCx} to={prefixLink('words/')}>Older posts</Link>
+          {/* <Link className={linkCx} to={prefixLink('words/')}>Older posts</Link> */}
         </div>
       </DocumentTitle>
     )
