@@ -11,7 +11,7 @@ module.exports = React.createClass({
     const { body } = this.props
     const title = DocumentTitle.rewind()
 
-    const csslink = <link rel="stylesheet" href="https://npmcdn.com/tachyons@4.0.0-beta.12/css/tachyons.min.css" />
+    const cssLink = <link rel="stylesheet" href="https://npmcdn.com/tachyons@4.0.0-beta.12/css/tachyons.min.css" />
 
     const gosquared = () => {
       return {
