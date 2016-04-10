@@ -11,12 +11,19 @@ module.exports = React.createClass({
     const { body } = this.props
     const title = DocumentTitle.rewind()
 
-    let cssLink
-    cssLink = <link rel="stylesheet" href="https://npmcdn.com/tachyons@4.0.0-beta.12/css/tachyons.min.css" />
+    const csslink = <link rel="stylesheet" href="https://npmcdn.com/tachyons@4.0.0-beta.12/css/tachyons.min.css" />
 
-    // if (process.env.NODE_ENV === 'production') {
-    //   cssLink = <link rel="stylesheet" href={prefixLink('/styles.css')} />
-    // }
+    const gosquared = () => {
+      return {
+        __html: `!function(g,s,q,r,d){r=g[r]=g[r]||function(){(r.q=r.q||[]).push(
+          arguments)};d=s.createElement(q);q=s.getElementsByTagName(q)[0];
+          d.src='//d1l6p2sc9645hc.cloudfront.net/tracker.js';q.parentNode.
+          insertBefore(d,q)}(window,document,'script','_gs');
+
+          _gs('GSN-738889-F', false);
+        </script>`,
+      }
+    }
 
     return (
       <html lang="en">
@@ -29,6 +36,7 @@ module.exports = React.createClass({
           />
           <title>{title}</title>
           {cssLink}
+          <script dangerouslySetInnerHTML={ gosquared() } />
         </head>
         <body className="landing-page">
           <div id="react-mount" dangerouslySetInnerHTML={{ __html: body }} />
