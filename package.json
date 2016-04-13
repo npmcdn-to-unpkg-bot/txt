@@ -17,7 +17,6 @@
     "moment": "^2.11.2",
     "ramda": "^0.20.1",
     "react-document-title": "^2.0.1",
-    "react-responsive-grid": "^0.3.1",
     "react-router": "^2.0.1",
     "safe-access": "^0.1.0",
     "typography": "^0.7.0",

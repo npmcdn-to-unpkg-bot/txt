@@ -1,14 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router'
-import { Container } from 'react-responsive-grid'
 import { prefixLink } from 'gatsby-helpers'
-// import { rhythm, fontSizeToMS } from 'utils/typography'
 import { config } from 'config'
 
 class Template extends React.Component {
   render () {
     const { location, children } = this.props
     let header
+
     if (location.pathname === prefixLink('/')) {
       header = (
         <h1 className="sans-serif fw8 f2 ph3">
@@ -23,6 +22,8 @@ class Template extends React.Component {
           </Link>
         </h1>
       )
+    } else if (location.pathname === '/resume/') {
+      header = null
     } else {
       header = (
         <h3 className="sans-serif fw8 f5 ph3">
@@ -39,10 +40,10 @@ class Template extends React.Component {
       )
     }
     return (
-      <Container>
+      <div>
         {header}
         {children}
-      </Container>
+      </div>
     )
   }
 }
