@@ -150,7 +150,7 @@ module.exports = class Resume extends Component {
             </ul>
 
             <ul className="list sans-serif mb2 pl0 pr4 fn fl-ns w-50-l">
-              <li><h2 id="sideprojects" className="f4 pt6 mt0 mb4 mb5-ns">Side Projects</h2></li>
+              <li><h2 id="sideprojects" className="f4 pt6 mt0 mb4 mb5-ns">Side Projects (incomplete list)</h2></li>
               { config.side_projects.map((project) => <ResumeItem {...project} subtitle={project.when} />) }
             </ul>
 
