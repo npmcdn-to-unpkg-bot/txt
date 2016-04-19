@@ -7,7 +7,7 @@ import access from 'safe-access'
 import { config } from 'config'
 import include from 'underscore.string/include'
 import Bio from 'components/Bio'
-import { both, compose, filter, map, path, pathEq, reverse, sortBy, take } from 'ramda'
+import { both, compose, filter, map, path, pathEq, reject, reverse, sortBy, take } from 'ramda'
 
 const linkCx = 'f5 black db b no-underline mb2'
 
@@ -43,6 +43,7 @@ class BlogIndex extends React.Component {
       map(pageToLink),
       reverse,
       sortBy(path(['data', 'date'])),
+      reject(pathEq(['data', 'published'], false)),
       filter(pageExists)
     )(this.props.route.pages)
 
@@ -53,7 +54,7 @@ class BlogIndex extends React.Component {
           <ul className="list pl0">
             {pageLinks}
           </ul>
-          <Link className={linkCx} to={prefixLink('words/')}>Older posts</Link>
+          {/* <Link className={linkCx} to={prefixLink('words/')}>Older posts</Link> */}
         </div>
       </DocumentTitle>
     )
