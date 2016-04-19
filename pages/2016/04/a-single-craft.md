@@ -5,7 +5,7 @@ date: 2016-04-18
 ---
 
 In [The Media Lab: Inventing The Future at
-MIT](https://www.goodreads.com/book/show/38276.The_Media_Lab) by [Stewart
+MIT](https://www.goodreads.com/book/show/38276.The_Media_Lab), [Stewart
 Brand](https://en.wikipedia.org/wiki/Stewart_Brand) talks about [Nicholas
 Negroponte’s](https://en.wikipedia.org/wiki/Nicholas_Negroponte) vision for the
 founding of the Lab:
