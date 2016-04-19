@@ -24,10 +24,12 @@
   },
   "devDependencies": {
     "babel-preset-react-hmre": "^1.1.1",
+    "classnames": "^2.2.3",
     "eslint": "^2.4.0",
     "eslint-config-airbnb": "^6.1.0",
     "eslint-plugin-react": "^4.2.1",
-    "gh-pages": "^0.11.0"
+    "gh-pages": "^0.11.0",
+    "marked": "^0.3.5"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
   "keywords": [
