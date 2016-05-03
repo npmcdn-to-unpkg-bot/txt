@@ -2,6 +2,14 @@
 
 import React, { Component, PropTypes } from 'react'
 import config from '../_config.yaml'
+import R from 'ramda'
+
+const idify = R.compose(
+  R.join('-'),
+  R.split(' '),
+  R.replace(/(\.|\:)/g, ''),
+  R.toLower
+)
 
 function Link ({ url, children }) {
   return (
@@ -18,7 +26,7 @@ Link.propTypes = {
 
 function MaybeTitleLink ({ url, children }) {
   return (
-    <h4 className="f5 mb0">
+    <h4 className="f5 mb0" id={idify(children)} >
       { url ? <Link url={url}>{ children }</Link> : children }
     </h4>
   )
@@ -160,7 +168,7 @@ module.exports = class Resume extends Component {
             <ul className="list sans-serif mb2 pl0 pr4 fn fl-ns w-50-l">
               <li><h2 id="education" className="f4 pt6 mt0 mb4 mb5-ns">Education</h2></li>
               <li className="mb4 mb5-ns">
-                <h4 className="f5 mb0"><a href="http://www.ravensbourne.ac.uk/" className="b dark-gray mb0">Ravensbourne College</a></h4>
+                <h4 className="f5 mb0" id="ravensbourne-college"><a href="http://www.ravensbourne.ac.uk/" className="b dark-gray mb0">Ravensbourne College</a></h4>
                 <p className="gray measure lh-copy mt2">BA Graphic Design <span className="light-gray">|</span> Sep 08&ndash;June 11</p>
                 <p className="gray measure lh-copy">Classes included graphic design, typography, wayfinding, editorial design, information design, product design, branding &amp; web design.</p>
                 <h5 className="f6 mb2">Awards</h5>
@@ -172,7 +180,7 @@ module.exports = class Resume extends Component {
                 </ul>
               </li>
               <li className="mb4 mb5-ns">
-                <h4 className="f5 mb0"><a href="http://www.barnetsouthgate.ac.uk/" className="b dark-gray mb0">Barnet College</a></h4>
+                <h4 className="f5 mb0" id="barnet-college"><a href="http://www.barnetsouthgate.ac.uk/" className="b dark-gray mb0">Barnet College</a></h4>
                 <p className="gray measure lh-copy mt2">BTEC National Diploma Graphic Design <span className="light-gray">|</span> Sep 06&ndash;June 08</p>
               </li>
             </ul>
@@ -206,15 +214,7 @@ module.exports = class Resume extends Component {
           <div className="cf">
             <ul className="list sans-serif mb2 pl0 pr4 fn fl-ns w-50-l">
               <li><h2 id="misc" className="f4 pt6 mt0 mb4 mb5-ns">Misc</h2></li>
-              <li className="mb4 mb5-ns">
-                <h4 className="f5 mb0"><a href="https://www.seedcamp.com/" className="b dark-gray mb0">Seedcamp Hackathon Judge</a></h4>
-                <p className="gray measure lh-copy mt0">Feb 13</p>
-
-              </li>
-              <li className="mb4 mb5-ns">
-                <h4 className="f5 mb0"><a href="https://www.leanstartupmachine.com/" className="b dark-gray mb0">Lean Startup Machine Mentor</a></h4>
-                <p className="gray measure lh-copy mt0">Jan 13</p>
-              </li>
+              { config.misc.map((m) => <ResumeItem {...m} subtitle={m.when} />) }
             </ul>
           </div>
         </article>
