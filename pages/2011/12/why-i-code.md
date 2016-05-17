@@ -1,7 +1,7 @@
 ---
 layout: post
 slug: why-i-code
-published: false
+published: true
 date: '2011-12-21 01:29:29'
 title: 'Desingineering: Why I Code'
 ---
