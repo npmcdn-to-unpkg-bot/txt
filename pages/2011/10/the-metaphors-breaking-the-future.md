@@ -43,7 +43,7 @@ But I'm pretty sure there's not _a thing_ in my physical living room
 called a 'Find My Friends'. The metaphor is empty. It's not referring to
 anything. It's just a leather texture.
 
-![]({{site.root}}/public/images/p/2011/10/IMG_0054.png)
+![](./IMG_0054.png)
 
 Paper doesn't scroll; much less so a digital map debossed into a
 bevelled [Corinthian
@@ -68,7 +68,7 @@ Apple can and did build a better application in this case by avoiding the obviou
 
 It can be done.
 
-![]({{site.root}}/public/images/p/2011/10/itunes_movie_trailers_ipad.jpg)
+![](./itunes_movie_trailers_ipad.jpg)
 
 
 ### Neat! What other metaphors are broken?
@@ -79,7 +79,7 @@ In contrast, the newly released Guardian app is brilliantly un-skeuomorphic. The
 
 The Guardian _get it._
 
-![]({{site.root}}/public/images/p/2011/10/IMG_0050.png)
+![](./IMG_0050.png)
 
 ### And then Apple fuck it all up.
 
@@ -89,7 +89,7 @@ The Guardian app breaks past the page/paper/column metaphor. Newsstand tries to 
 
 **It takes the easy way out, and as designers we don't believe in easy.**
 
-![]({{site.root}}/public/images/p/2011/10/IMG_0053.png)
+![](./IMG_0053.png)
 
 ### Yesterday's News
 

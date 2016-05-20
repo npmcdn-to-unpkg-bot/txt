@@ -3,7 +3,7 @@ date: '2014-04-28'
 layout: post
 slug: moving-on-from-makeshift
 title: Moving on from Makeshift
-header-img: '/public/images/p/2014/04/tumblr_n3ttaoFz9x1st5lhmo1_1280.jpg'
+header-img: './tumblr_n3ttaoFz9x1st5lhmo1_1280.jpg'
 published: true
 ---
 

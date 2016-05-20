@@ -11,7 +11,7 @@ If there's one thing I love more than talking about technology and looking at ty
 
 They're a great case study in contrast. Contrast is _the_ differentiating factor in turning otherwise good work to great - from typography and grid systems to whole product lines. I'll get back to the design and tech in a minute, but first, burgers.
 
-![]({{site.root}}/public/images/p/2011/10/innoutsign.png)
+![](./innoutsign.png)
 
 
 ### Burgers and Choice Paralysis
@@ -21,11 +21,11 @@ For those who haven’t visited, In-N-Out Burger sell three burgers - the hambur
 
 Just a burger, a burger with cheese, and a burger with cheese and more meat. Easy to pick, easy for the franchise to make, easy product line to maintain. Better by less.
 
-![]({{site.root}}/public/images/p/2011/10/innoutmenu.png)
+![](./innoutmenu.png)
 
 Let's compare that to [McDonalds’ menu](http://www.mcdonalds.com/us/en/full_menu_explorer.html). I count 57 burgers, main salads and wraps; that's before we get to sides and desserts.
 
-[![]({{site.root}}/public/images/p/2011/10/mcdonaldsmenu.png)](http://www.mcdonalds.com/us/en/full_menu_explorer.html)
+[![](./mcdonaldsmenu.png)](http://www.mcdonalds.com/us/en/full_menu_explorer.html)
 
 Perhaps three burgers is _too spartan_ a menu. That's fine - I'm partial to some chili and guacamole on my burgers from time to time, and vegetarian friends felt alienated when the rest of the group suggested eating at In-N-Out. But that doesn't mean that we should go back to the McDonalds option of having several dozen shitty products instead of three great ones though. Five options? Six? Seven? Some kind of reasonable compromise before descending into fast food choice paralysis hell.
 
@@ -41,7 +41,7 @@ This choice isn't empowering the consumer; it's not being kind and giving them o
 
 Apple sell the new iPhone, the slightly older iPhone, and the old-but-still-better-than-any-Android iPhone. The three hamburgers.
 
-[![]({{site.root}}/public/images/p/2011/10/Apple-iPhone-Compare.png)](http://www.apple.com/iphone/compare-iphones/)
+[![](./Apple-iPhone-Compare.png)](http://www.apple.com/iphone/compare-iphones/)
 
 
 ### Size matters
@@ -51,11 +51,11 @@ Why won't Apple release a 4" iPhone and a 7" iPad? The In-N-Out Principle at wor
 
 Samsung have released or announced 5.4", 7", 7.7", 8.9" & 10.1" tablets (with multiple models of some); in addition to a range of phones which goes up to the 4.65" Galaxy Nexus. With such small gaps between products, Samsung has ruled out the possibility of unique and innovative uses. Fast food technology.
 
-[![]({{site.root}}/public/images/p/2011/10/samsungmobilecomparison.png)](http://c.jongold.in/0M1A1A0d3R0f100b031D)
+[![](./samsungmobilecomparison.png)](http://c.jongold.in/0M1A1A0d3R0f100b031D)
 
 For more on choice paralysis and watered-down product lines, [Peter Bright’s article on Ars Technica about Ultrabooks](http://arstechnica.com/hardware/news/2011/09/ultrabook-intels-300-million-plan-to-beat-apple-at-its-own-game.ars/2) nails it - again compare Dell, HP or Toshiba's lineups to Apple's computers…wait, haven't I seen this somewhere before?
 
-![]({{site.root}}/public/images/p/2011/10/grid.jpeg)
+![](./grid.jpeg)
 
 There it is.
 
@@ -75,15 +75,15 @@ In the same way as fewer burgers to choose from helps us make a decision and fil
 
 The simplified layouts below take the same basic shape  - using a more rigid grid with less flexibility makes for a more tense layout; increasing options makes the whole thing more sloppy.
 
-![]({{site.root}}/public/images/p/2011/10/gridgrey-01.png)
+![](./gridgrey-01.png)
 
-![]({{site.root}}/public/images/p/2011/10/gridgrey-02.png)
+![](./gridgrey-02.png)
 
 And an example with more representative content - again the beauty of a grid (unity, contrast and tension) is lost with an increasing number of decreasingly significant options for content placement.
 
-![]({{site.root}}/public/images/p/2011/10/gridgrey-04.png)
+![](./gridgrey-04.png)
 
-![]({{site.root}}/public/images/p/2011/10/gridgrey-03.png)
+![](./gridgrey-03.png)
 
 Again, I'm not suggesting that we should always stick to 4 column grids, but when you start your next project make sure you consider the implications and relevance of the grid you're working with. Less is often more.
 
@@ -97,7 +97,7 @@ Creating and sticking to a strict type scale is a great first step. Limit the op
 
 In Josef Müller-Brockmann's seminal book '[Grid Systems in Graphic Design](http://www.amazon.co.uk/Grid-Systems-Graphic-Design-Typographers/dp/3721201450/ref=sr_1_5?ie=UTF8&qid=1319646813&sr=8-5)' there's a brilliant illustration of this concept - if you don't own the book then I highly recommend it.
 
-![]({{site.root}}/public/images/p/2011/10/Grid-Systems-1.png)
+![](./Grid-Systems-1.png)
 
 Of course this principle isn't just applicable to graphic design, tablet computers and beefburgers - in almost any field or application, limiting choice makes each option stronger by itself and stronger as the sum of parts.
 

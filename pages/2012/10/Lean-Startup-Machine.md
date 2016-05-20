@@ -9,14 +9,14 @@ Over the weekend I attended [Lean Startup Machine's](http://leanstartupmachine.c
 **What is Lean Startup Machine?** Different to the type of hackathon you might be used to, Lean Startup Machine focuses on **validated learning** as an outcome rather than coded & designed prototypes. It will take you from knowing nothing about Lean to being well versed in the theory and **practice** in 48 hours. Ryan and his team leave no one behind and emphasise the importance of understanding the process.
 
 ![Our Validation
-Board]({{site.root}}/public/images/p/2012/10/ValidationBoard.jpg)
+Board](./ValidationBoard.jpg)
 
 During the weekend, you’ll make friends with the [Validation Board](http://leanstartupmachine.com/validationboard/) - a great way to note down your ideas and keep track of progress. You might be familiar with the [Business Model Canvas](http://www.businessmodelgeneration.com/canvas) (a visual grid for describing and iterating on business models); the Validation Board is a similar idea for earlier stage exploration. It's a really neat way to note down your Hypotheses and  Assumptions at each step of the process, and keep track of the work you've done. I found using the Validation Board invaluable in two areas - it helped crystallise our team's thinking, and it allowed wandering mentors and friends to understand our progress quickly and easily. 5-7 words per post-it note, all uppercase, no rambling. Boom!
 
 You can [download a Validation Board for free online](http://leanstartupmachine.com/validationboard/) as a PDF and Keynote template, but consider taking it to a print shop and getting an A1 print to stick on your wall. Also take some time to watch the videos on the site - they go some way to explaining how it should be used.
 
 ![Our Validation
-Board]({{site.root}}/public/images/p/2012/10/ValidationBoard.gif)
+Board](./ValidationBoard.gif)
 
 Before this weekend I wondered what people **actually do** at a Lean Startup Machine course - I knew there was no hacking or designing involved, but I couldn't picture 'talking to customers'. Would we be roleplaying? Would a mentor stand on stage and just tell us theoretical teachings? Hell no! **The weekend revolved around getting out of the building** (physically and metaphorically). 'Get Out Of The Building' is a synonym for 'Getting Out of Your Head' - it turned out phoning contacts and conducting online qualitative & quantitative research was 'out of the building' too.
 

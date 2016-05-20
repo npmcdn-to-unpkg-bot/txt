@@ -47,7 +47,7 @@ being the greatest setting for learning design), or at an
 internship/apprenticeship/etc (due to time constraints), but I’m not
 sure it’s valuable enough to justify the investment.
 
-![]({{site.root}}/public/images/p/2011/07/n725840617_5477295_151.jpg)
+![](./n725840617_5477295_151.jpg)
 
 ### The Bad.
 
@@ -80,7 +80,7 @@ and self-serving design education has become. Nice. **If a degree has to
 be compromised to be shoehorned in to the national education framework
 then it’s not appropriate anymore. **
 
-![]({{site.root}}/public/images/p/2011/07/n725840617_5477285_8646.jpg)
+![](./n725840617_5477285_8646.jpg)
 
 ### Education can’t do digital.
 
