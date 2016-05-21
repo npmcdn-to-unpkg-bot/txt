@@ -4,3 +4,4 @@ npm-debug.log
 public
 .gatsby-context.js
 .DS_Store
+pages/drafts
