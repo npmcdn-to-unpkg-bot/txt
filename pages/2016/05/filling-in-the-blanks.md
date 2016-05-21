@@ -2,6 +2,7 @@
 layout: post
 title: Filling in the blanks with InDesign
 date: 2016-05-20
+wordcount: 277
 ---
 
 Working on a gigantic project in InDesign, I found myself with lots of pages descending from the same master; filled with placeholders to be filled out each time. It looked something like this:

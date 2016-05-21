@@ -2,6 +2,7 @@
 layout: post
 title: A Single Craft
 date: 2016-04-18
+wordcount: 366
 ---
 
 In [The Media Lab: Inventing The Future at

@@ -13,6 +13,7 @@ const linkCx = 'f5 black db b no-underline mb2'
 
 const pageToLink = (page) => {
   const title = access(page, 'data.title') || page.path
+  const shortTitle = access(page, 'data.short_title')
   const isLink = (access(page, 'data.layout') === 'link')
 
   return (
@@ -21,9 +22,9 @@ const pageToLink = (page) => {
       key={page.path}
     >
       { isLink ?
-        <a className={linkCx} href={path(['data', 'external_url'], page)}>{ title }</a>
+        <a className={linkCx} href={path(['data', 'external_url'], page)}>{ shortTitle || title }</a>
         :
-        <Link className={linkCx} to={prefixLink(page.path)}>{title}</Link>
+        <Link className={linkCx} to={prefixLink(page.path)}>{ shortTitle || title }</Link>
       }
       <time className="gray">
         {moment(page.data.date).format('MMMM YYYY')}

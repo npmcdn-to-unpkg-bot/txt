@@ -15,9 +15,12 @@ class MarkdownWrapper extends React.Component {
         <div>
           <div className="sans-serif ph3 pv2 pv5-ns cf">
             <header className="w-50-ns pr4-ns mb4">
-              <time className="f6 ttu tracked gray">
+              <time className="f6 ttu tracked gray mr4">
                {moment(post.date).format('MMMM D, YYYY')}
               </time>
+              <span className="f6 ttu tracked gray">
+                { post.wordcount && `${Math.ceil(post.wordcount / 200)} min read` }
+              </span>
               <h1 className="lh-title fw8 f3 f2-ns measure">{post.title}</h1>
             </header>
             <div
