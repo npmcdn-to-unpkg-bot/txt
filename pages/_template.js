@@ -16,7 +16,7 @@ class Template extends React.Component {
               textDecoration: 'none',
               color: 'inherit',
             }}
-            to={prefixLink('/txt')}
+            to={prefixLink('/txt/')}
           >
             {config.blogTitle}
           </Link>
@@ -32,7 +32,7 @@ class Template extends React.Component {
               textDecoration: 'none',
               color: 'inherit',
             }}
-            to={prefixLink('/txt')}
+            to={prefixLink('/txt/')}
           >
             {config.blogTitle}
           </Link>
