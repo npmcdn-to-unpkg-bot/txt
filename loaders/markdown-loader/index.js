@@ -26,7 +26,7 @@ const highlight = (str, lang) => {
 
 const renderer = new marked.Renderer()
 
-const paragraphCx = classNames('lh-copy', 'measure', 'sans-serif')
+const paragraphCx = classNames('lh-copy', 'measure', 'mono')
 
 function classForHeadline (level) {
   return classNames('lh-title', 'sans-serif', {

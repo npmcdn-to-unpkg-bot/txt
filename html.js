@@ -30,13 +30,19 @@ module.exports = React.createClass({
         <head>
           <meta charSet="utf-8" />
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+          <meta property="og:type" content="article" />
+
           <meta
             name="viewport"
             content="width=device-width, initial-scale=1.0 maximum-scale=5.0"
           />
+          <link href="//cloud.webtype.com/css/bad02e8c-4481-4e1b-b838-01fe14c932f1.css" rel="stylesheet" type="text/css" />
           <title>{title}</title>
           {cssLink}
           <script dangerouslySetInnerHTML={ gosquared() } />
+          <style type="text/css">
+            .mono { font-family: 'Input Mono', 'Inconsolata', 'Monaco', monospace; }
+          </style>
         </head>
         <body className="landing-page">
           <div id="react-mount" dangerouslySetInnerHTML={{ __html: body }} />

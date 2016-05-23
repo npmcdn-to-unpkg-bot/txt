@@ -24,7 +24,7 @@ class MarkdownWrapper extends React.Component {
               <h1 className="lh-title fw8 f3 f2-ns measure">{post.title}</h1>
             </header>
             <div
-              className="mt4 mt0-ns measure lh-copy f4-ns"
+              className="mt4 mt0-ns measure lh-copy f6 f5-ns"
               dangerouslySetInnerHTML={{ __html: post.body }}
             />
           </div>
