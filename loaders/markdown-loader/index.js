@@ -74,10 +74,16 @@ renderer.codespan = (code) => `<code class='code bg-near-white dark-gray ph1 br1
 /* renderer.br = () => null */
 /* renderer.del = (string) => null */
 /* renderer.link = (href, title, text) => null */
-renderer.image = (href, title, text) =>
+renderer.image = (href, title, text) => {
+  const figCaption = title && `<figcaption>${title}</figcaption>`
+  const t = `title='${title}'`
+  return `
+    <figure>
+      <img src='${href}' alt='${text}' ${title && t} style='max-width:100%; height:auto;' />
+      ${title ? figCaption : ''}
+    </figure>
   `
-    <img src='${href}' title='${title}' style='max-width:100%' />
-  `
+}
 
 marked.setOptions({
   renderer,
