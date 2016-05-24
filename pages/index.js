@@ -7,9 +7,9 @@ import access from 'safe-access'
 import { config } from 'config'
 import include from 'underscore.string/include'
 import Bio from 'components/Bio'
-import { both, compose, filter, map, path, pathEq, reject, reverse, sortBy, take } from 'ramda'
+import { both, compose, filter, map, path, pathEq, reject, reverse, sortBy } from 'ramda'
 
-const linkCx = 'f5 black db b no-underline mb2'
+const linkCx = 'fw8 f3 f2-ns black db b no-underline mb2 mb3-ns measure'
 
 const pageToLink = (page) => {
   const title = access(page, 'data.title') || page.path
@@ -18,7 +18,7 @@ const pageToLink = (page) => {
 
   return (
     <li
-      className="mb4"
+      className="mb4 mb5-ns"
       key={page.path}
     >
       { isLink ?
