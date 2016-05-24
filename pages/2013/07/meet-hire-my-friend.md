@@ -1,5 +1,5 @@
 ---
-date: '2013-07-17'
+date: 2013-07-17
 layout: link
 title: Meet HireMyFriend
 published: true
