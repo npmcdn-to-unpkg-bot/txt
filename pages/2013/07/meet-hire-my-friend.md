@@ -1,9 +1,8 @@
 ---
-date: 2013-07-17
-layout: link
 title: Meet HireMyFriend
+layout: link
+date: 2013-07-17
 published: true
-header-img: 'https://d262ilb51hltx0.cloudfront.net/proxy/0*7t0yjVF0Bu-YpmzJ.png'
 external_url: https://medium.com/@jongold/meet-hiremyfriend-a-new-product-from-makeshift-372c64f3d833
 ---
 
