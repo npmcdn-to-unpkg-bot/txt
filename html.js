@@ -14,9 +14,9 @@ module.exports = React.createClass({
     const cssLink = <link rel="stylesheet" href="https://npmcdn.com/tachyons@4.0.0-beta.28/css/tachyons.min.css" />
 
     let css
-    if (process.env.NODE_ENV === 'production') {
-      css = <style dangerouslySetInnerHTML={{ __html: require('!raw!./public/styles.css') }} />
-    }
+    // if (process.env.NODE_ENV === 'production') {
+    //   css = <style dangerouslySetInnerHTML={{ __html: require('!raw!./public/styles.css') }} />
+    // }
 
     const gosquared = () => {
       return {
