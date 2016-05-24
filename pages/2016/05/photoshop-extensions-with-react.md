@@ -2,7 +2,7 @@
 layout: post
 title: Photoshop Extensions with React & Redux
 date: 2016-05-19
-wordcount: 151
+published: false
 ---
 
 I’ve been working on a web-based design tool for a few months (more on that

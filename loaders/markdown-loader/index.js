@@ -3,6 +3,7 @@ import marked from 'marked'
 import classNames from 'classnames'
 import hljs from 'highlight.js'
 import objectAssign from 'object-assign'
+import { length, split } from 'ramda'
 
 hljs.configure({
   tabReplace: '  ',
@@ -97,7 +98,7 @@ module.exports = function (content) {
   const meta = frontMatter(content)
   const body = marked(meta.body)
   const result = objectAssign({}, meta.attributes, {
-    body,
+    body, wordCount: length(split(" ", content)),
   })
   this.value = result
   return `module.exports = ${JSON.stringify(result)}`

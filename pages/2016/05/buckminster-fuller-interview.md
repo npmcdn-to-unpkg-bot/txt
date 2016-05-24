@@ -3,7 +3,6 @@ layout: post
 title: a candid conversation with the visionary architect / inventor / philosopher R. Buckminster Fuller
 short_title: Buckminster Fuller Playboy Interview, 1972
 date: 2016-05-21
-wordcount: 17400
 ---
 
 > After reading Marshall McLuhan’s excellent [Playboy
