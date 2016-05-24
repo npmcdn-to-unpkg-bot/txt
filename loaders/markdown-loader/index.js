@@ -33,10 +33,10 @@ function classForHeadline (level) {
     f2: level === 1,
     f3: level === 2,
     f4: level === 3,
-    fw8: (level === 1 || level === 2),
-    fw3: (level === 3),
-    mt0: (level === 2 || level === 3),
-    mb3: (level === 2 || level === 3),
+    f5: level === 4,
+    fw8: (level === 1 || level === 2 || level === 3 || level === 4),
+    mt5: (level === 2 || level === 3 || level === 4),
+    mb3: (level === 2 || level === 3 || level === 4),
   })
 }
 
@@ -47,7 +47,7 @@ renderer.paragraph = (text) =>
   `<p class='${paragraphCx}'>${text}</p>`
 
 renderer.blockquote = (quote) =>
-  `<blockquote class='i bl ml0 pl4'>
+  `<blockquote class='i bl ml0 pl4 mv4'>
     ${quote}
   </blockquote>`
 
@@ -75,10 +75,10 @@ renderer.codespan = (code) => `<code class='code bg-near-white dark-gray ph1 br1
 /* renderer.del = (string) => null */
 /* renderer.link = (href, title, text) => null */
 renderer.image = (href, title, text) => {
-  const figCaption = title && `<figcaption>${title}</figcaption>`
+  const figCaption = title && `<figcaption class="mono f6 i gray">${title}</figcaption>`
   const t = `title='${title}'`
   return `
-    <figure>
+    <figure class="mh0 mv4 relative left--2-ns">
       <img src='${href}' alt='${text}' ${title && t} style='max-width:100%; height:auto;' />
       ${title ? figCaption : ''}
     </figure>

@@ -13,7 +13,7 @@ class MarkdownWrapper extends React.Component {
     return (
       <DocumentTitle title={`${post.title} | ${config.blogTitle}`}>
         <div>
-          <div className="sans-serif ph3 pv2 pv5-ns cf">
+          <div className="sans-serif ph3 pv2 pv5-ns cf relative left-2-ns">
             <header className="measure mb4">
               <time className="f6 ttu tracked gray mr4">
                {moment(post.date).format('MMMM D, YYYY')}
@@ -24,7 +24,7 @@ class MarkdownWrapper extends React.Component {
               <h1 className="lh-title fw8 f3 f2-ns measure">{post.title}</h1>
             </header>
             <div
-              className="mt4 mt0-ns measure lh-copy f6 f5-ns"
+              className="mt4 mt0-ns measure lh-copy f6 f5-ns "
               dangerouslySetInnerHTML={{ __html: post.body }}
             />
           </div>
