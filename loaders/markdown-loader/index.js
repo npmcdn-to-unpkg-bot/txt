@@ -54,13 +54,7 @@ renderer.blockquote = (quote) =>
 
 // Block Level methods
 renderer.code = (code, language) =>
-  `
-    <pre class='pre bg-near-white pa2 br1'>
-      <code class='code dark-gray'>
-        ${code}
-      </code>
-    </pre>
-  `
+  `<pre class='f6 pre bg-near-white pa2'><code class='code dark-gray'>${code}</code></pre>`
 
 renderer.html = (html) => html
 
