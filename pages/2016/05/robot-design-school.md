@@ -27,6 +27,7 @@ Thanks to [Stephen Coles](http://www.fontbureau.com/blog/clear-definitions/) for
 Designing an AI system that could recreate a core discipline of a complex profession turned into a bit of a challenge. For one, I had to learn about AI and all of its disciplines, on the job, from first principles (I don't have a computer science background, and I was the only design-engineer on the project - we were spread super thin). At the time I was going for a daily evening walk around Pacific Heights to take a break from my screen, look at the sunset and mull over the enormity of the task. On one such walk an Alan Turing quote popped into mind. 
 
 > Instead of trying to produce a programme (sic) to simulate the adult mind, why not rather try to produce one which simulates the child's? If this were then subjected to an appropriate course of education one would obtain the adult brain.
+> 
 > — Alan Turing, [Computing Machinery and Intelligence](http://www.loebner.net/Prizef/TuringArticle.html), 1950
 
 What if, instead of looking at design as a whole, I looked at design as a series of models based on the education of a human designer?
@@ -57,6 +58,7 @@ What to computers are lowly strings—the humblest of data structures—to human
 Design school provides a mapping from the emotional to the rational - we learn _why_ elements create emotional reactions in our brains, and how to utilize those motifs to recreate emotions in others. We learn the jargon; learn to tell apart `Grotesque` & `Humanist`, `Didone` & `Transitional`, `Fraktur` & `Rotunda`. We learn how to identify a font by its meta attributes: `x-height`, `contrast`, `width`, `ascenders`, `counters` and too many more to name.
 
 > The purpose of abstraction is not to be vague, but to create a new semantic level in which one can be absolutely precise
+> 
 > — Edsger Dijkstra, [The Humble Programmer](https://www.cs.utexas.edu/~EWD/transcriptions/EWD03xx/EWD340.html), 1972
 
 This new, precise terminology gives us the grounding to learn & apply rules & systems in our work; we can target fonts with such an x-height, or contrast, or whatever we need. We identify fonts with specificity, rather than a raw judgment of "I just kinda like it".
@@ -246,7 +248,8 @@ I left The Grid at the beginning of 2016. For several months prior the typograph
 Of course with hindsight it's easy to see what could have been better, and that's informing my work going forward. The Grid is aiming for a design system that totally abstracts away details for the end user. After all of the smarts that went in to the typography system, I was constrained to expose it via one `<input type="range" />` slider. Designer friends asking how they could use the system would no doubt be disappointed. Separating the work I did there with the future of artificial intelligence in the design industry, I'm fascinated by how much better designers could be if augmented by smart algorithms rather than replaced by them. 
 
 > A study group estimated that it would be 1980 before developments in artificial intelligence make it possible for machines alone to do much thinking or problem solving of military significance. That would leave, say, five years to develop man-computer symbiosis and 15 years to use it. The 15 may be 10 or 500, but **those years should be intellectually the most creative and exciting in the history of mankind.**
-> J. C. R. Licklider, [Man-Computer Symbiosis](http://groups.csail.mit.edu/medg/people/psz/Licklider.html), 1960
+> 
+> — J. C. R. Licklider, [Man-Computer Symbiosis](http://groups.csail.mit.edu/medg/people/psz/Licklider.html), 1960
 
 Looking at the current crop of design tools after taking a glimpse at the future is frustrating. There is a total lack of contextual and industrial awareness in our software. The tools manipulate strings, vectors and booleans; not design. But tools are the ripest place to affect change, so I'm building design tools that integrate intelligent algorithms with the design process; tools that try to make designers better by learning about what they're doing. What we're doing. Augmenting rather than replacing desogners.
 
