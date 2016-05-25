@@ -27,7 +27,7 @@ const highlight = (str, lang) => {
 
 const renderer = new marked.Renderer()
 
-const paragraphCx = classNames('lh-copy', 'measure', 'mono')
+const paragraphCx = classNames('lh-copy', 'measure', 'sans-serif')
 
 function classForHeadline (level) {
   return classNames('lh-title', 'sans-serif', {
@@ -70,7 +70,7 @@ renderer.codespan = (code) => `<code class='code bg-near-white dark-gray ph1 br1
 /* renderer.del = (string) => null */
 /* renderer.link = (href, title, text) => null */
 renderer.image = (href, title, text) => {
-  const figCaption = title && `<figcaption class="mono f6 i gray">${title}</figcaption>`
+  const figCaption = title && `<figcaption class="sans-serif f6 i gray">${title}</figcaption>`
   const t = `title='${title}'`
   return `
     <figure class="mh0 mv4 relative left--2-ns">

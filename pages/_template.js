@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router'
 import { prefixLink } from 'gatsby-helpers'
 import { config } from 'config'
-import '../css/styles.css'
+// import '../css/styles.css'
 
 class Template extends React.Component {
   render () {

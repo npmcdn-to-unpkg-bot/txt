@@ -13,11 +13,6 @@ module.exports = React.createClass({
 
     const cssLink = <link rel="stylesheet" href="https://npmcdn.com/tachyons@4.0.0-beta.28/css/tachyons.min.css" />
 
-    let css
-    // if (process.env.NODE_ENV === 'production') {
-    //   css = <style dangerouslySetInnerHTML={{ __html: require('!raw!./public/styles.css') }} />
-    // }
-
     const gosquared = () => {
       return {
         __html: `!function(g,s,q,r,d){r=g[r]=g[r]||function(){(r.q=r.q||[]).push(
@@ -41,10 +36,8 @@ module.exports = React.createClass({
             name="viewport"
             content="width=device-width, initial-scale=1.0 maximum-scale=5.0"
           />
-          <link href="//cloud.webtype.com/css/bad02e8c-4481-4e1b-b838-01fe14c932f1.css" rel="stylesheet" type="text/css" />
           <title>{title}</title>
           {cssLink}
-          {css}
           <script dangerouslySetInnerHTML={ gosquared() } />
         </head>
         <body className="landing-page">
