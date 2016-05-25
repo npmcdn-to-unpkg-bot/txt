@@ -38,6 +38,7 @@ module.exports = React.createClass({
           />
           <title>{title}</title>
           {cssLink}
+          <link rel="stylesheet" href="https://cdn.rawgit.com/isagalaev/highlight.js/master/src/styles/github.css" />
           <script dangerouslySetInnerHTML={ gosquared() } />
         </head>
         <body className="landing-page">

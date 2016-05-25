@@ -53,8 +53,15 @@ renderer.blockquote = (quote) =>
   </blockquote>`
 
 // Block Level methods
-renderer.code = (code, language) =>
-  `<pre class='f6 pre bg-near-white pa2'><code class='code dark-gray'>${code}</code></pre>`
+renderer.code = function (code, language) {
+  const out = this.options.highlight(code, language)
+
+  const codeCx = classNames('code', 'dark-gray', {
+    [`lang-${language}`]: !!language,
+  })
+
+  return `<pre class='f6 pre pa2'><code class='${codeCx}'>${out}</code></pre>`
+}
 
 renderer.html = (html) => html
 
@@ -65,7 +72,7 @@ renderer.html = (html) => html
 // Inline Level methods
 /* renderer.strong = (string) => null */
 /* renderer.em = (string) => null */
-renderer.codespan = (code) => `<code class='code bg-near-white dark-gray ph1 br1'>${code}</code>`
+renderer.codespan = (code) => `<code class='code bg-near-white dark-gray ph1 br1 f6'>${code}</code>`
 /* renderer.br = () => null */
 /* renderer.del = (string) => null */
 /* renderer.link = (href, title, text) => null */
@@ -82,7 +89,7 @@ renderer.image = (href, title, text) => {
 
 marked.setOptions({
   renderer,
-  // highlight,
+  highlight,
   sanitize: false,
   smartypants: true,
 })
@@ -92,7 +99,7 @@ module.exports = function (content) {
   const meta = frontMatter(content)
   const body = marked(meta.body)
   const result = objectAssign({}, meta.attributes, {
-    body, wordCount: length(split(" ", content)),
+    body, wordCount: length(split(' ', content)),
   })
   this.value = result
   return `module.exports = ${JSON.stringify(result)}`
