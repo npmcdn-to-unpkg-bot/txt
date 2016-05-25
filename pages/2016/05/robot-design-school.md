@@ -97,8 +97,6 @@ The x-height is the height of the lowercase x; an easy place to start! To get a 
   (/ (char-height font :x) (char-height font :A)))
 ```
 
-test
-
 ![](./robot-design-school-contrast.png "contrast")
 
 Certain characters really show off a font's contrast. Most notably, overlaying an 'O', 'o' or 'A' gives us a pretty clear sense of how fonts are diverging. The contrast can be expressed thus
