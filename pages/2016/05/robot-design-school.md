@@ -95,7 +95,7 @@ The x-height is the height of the lowercase x; an easy place to start! To get a 
 ```clojure
 (defn x-height [font]
   (/ (char-height font :x) (char-height font :A)))
-`
+```
 
 test
 
@@ -175,7 +175,7 @@ So this was cool - we could specify meta-rules like "show me fonts with these so
 
 ![](./robot-design-school-selection.png "*that one*")
 
-
+```clojure
 (defn small-x-height?
   [font]
     (<= (font :x-height)
