@@ -2,6 +2,7 @@ import React from 'react'
 import moment from 'moment'
 import DocumentTitle from 'react-document-title'
 import ReadNext from '../components/ReadNext'
+import Newsletter from 'components/newsletter'
 import { config } from 'config'
 import Bio from 'components/Bio'
 
@@ -39,6 +40,7 @@ class MarkdownWrapper extends React.Component {
             />
           </div>
           <footer className="ph3 pv3 fn">
+            <Newsletter />
             <ReadNext post={post} pages={route.pages} />
             <Bio />
           </footer>
