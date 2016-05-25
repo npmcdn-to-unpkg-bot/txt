@@ -243,7 +243,9 @@ I have some tools that explore this route; observing (with permission) how desig
 
 I left The Grid at the beginning of 2016. For several months prior the typography project had been put on hold due to other company needs; I never got to take it to production. I'm still pretty upset about that. #startuplife.
 
-Of course with hindsight it's easy to see what could have been better, and that's informing my work going forward. The Grid is aiming for a design system that totally abstracts away details for the end user. After all of the smarts that went in to the typography system, I was constrained to expose it via one `<input type="range" />` slider. Designer friends asking how they could use the system would no doubt be disappointed. Separating the work I did there with the future of artificial intelligence in the design industry, I'm fascinated by how much better designers could be if augmented by smart algorithms rather than replaced by them. 
+Of course with hindsight it's easy to see what could have been better, and that's informing my work going forward. The Grid is aiming for a design system that totally abstracts away details for the end user. After all of the smarts that went in to the typography system, I was constrained to expose it via one `<input type="range" />` slider.
+
+Designer friends asking how they could use the system would no doubt be disappointed. Separating the work I did there with the future of artificial intelligence in the design industry, I'm fascinated by how much better designers could be if we are augmented by smart algorithms rather than replaced by them. 
 
 > A study group estimated that it would be 1980 before developments in artificial intelligence make it possible for machines alone to do much thinking or problem solving of military significance. That would leave, say, five years to develop man-computer symbiosis and 15 years to use it. The 15 may be 10 or 500, but **those years should be intellectually the most creative and exciting in the history of mankind.**
 > 
