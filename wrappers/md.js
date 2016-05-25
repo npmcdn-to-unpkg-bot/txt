@@ -2,7 +2,7 @@ import React from 'react'
 import moment from 'moment'
 import DocumentTitle from 'react-document-title'
 import ReadNext from '../components/ReadNext'
-import Newsletter from 'components/newsletter'
+import Newsletter from 'components/Newsletter'
 import { config } from 'config'
 import Bio from 'components/Bio'
 
