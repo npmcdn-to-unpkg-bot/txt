@@ -249,7 +249,7 @@ Of course with hindsight it's easy to see what could have been better, and that'
 > 
 > — J. C. R. Licklider, [Man-Computer Symbiosis](http://groups.csail.mit.edu/medg/people/psz/Licklider.html), 1960
 
-Looking at the current crop of design tools after taking a glimpse at the future is frustrating. There is a total lack of contextual and industrial awareness in our software. The tools manipulate strings, vectors and booleans; not design. But tools are the ripest place to affect change, so I'm building design tools that integrate intelligent algorithms with the design process; tools that try to make designers better by learning about what they're doing. What we're doing. Augmenting rather than replacing desogners.
+Looking at the current crop of design tools after taking a glimpse at the future is frustrating. There is a total lack of contextual and industrial awareness in our software. The tools manipulate strings, vectors and booleans; not design. But tools are the ripest place to affect change, so I'm building design tools that integrate intelligent algorithms with the design process; tools that try to make designers better by learning about what they're doing. What we're doing. Augmenting rather than replacing designers.
 
 ![](./robot-design-school-similar-sites.png "for a certain subset of design, convergence is desirable")
 
