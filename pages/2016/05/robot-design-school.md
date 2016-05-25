@@ -38,7 +38,9 @@ I believe in the intervening 65 years that methodology has largely been disprove
 
 A common theme of criticism whenever I talk about algorithmic design is that it’s too nuanced a discipline to recreate algorithmically. That creativity can't be reduced down to a series of rules (typography is the most rule-driven thing in the creative arts, c'mon!). Presumably that criticism is discounting how it's taught in design school - as a series of lessons applied to a lossy storage medium: the brains of hungover 18 year olds. Lots of us were them, at one point. Staggeringly, amongst the freshman preoccupation with partying, we also learnt how to design. Hopefully with more computationally attentive platforms, we'll get even better results.
 
-Design is absolutely teachable, and I have a 4 step process for teaching it to machines. The process is written about below in the context of typography but it's equally applicable to layout, color, and every other subdiscipline of graphic design. I've used a mix of pseudocode and illustrations - apologies if it's too technical or not technical enough 🙏
+Design is absolutely teachable, and I have a 4 step process for teaching it to machines. The process is written about below in the context of typography but it's equally applicable to layout, color, and every other subdiscipline of graphic design.
+
+I've used a mix of pseudo-code and illustrations - apologies if it's too technical or not technical enough 🙏
 
 ## Part 1: Learning to see
 The thing about design is you don't need to be a designer to experience it. In the west we have hundreds of years of shared visual culture - we _feel_ what things communicate a priori, even if we can't quite label them.
