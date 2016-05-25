@@ -1,7 +1,6 @@
 ---
 title: Taking The Robots To Design School
 date: 2016-05-26
-published: false
 ---
 
 About a year ago I started working on merging typographic design and artificial intelligence. I'm writing the contents of my brain to hypertext right now, in May 2016: partially because it's fun to talk about, partially as journalling for my future self, and mostly because I want more people to think about these things.
@@ -11,13 +10,14 @@ For as long as I’ve been a designer I’ve been captivated by mathematical pur
 
 Rolling forward to spring 2015, I started working at The Grid - a startup working on AI-generated websites. For context, the product was somewhere around a Squarespace or Wix kind of deal - it allowed for non-designers to quickly create great looking websites. The twist was that instead of templates or themes, sophisticated design algorithms would work with the content to design a website custom to the user. Cool. As good a venue as any to explore design systems; I was tasked by the creative director and CEO to make the typography system 'better'.
 
-That was an open ended brief, and it led to some of the most interesting periods of exploration and pondering in my career. As far as I'm aware the workings of the preexisting typography system are still cloaked by my NDA, but it was _essentially_ human-specified. As a reaction to this I defined my own brief as "a system that can understand, select & apply typography with the nuance of an expert human designer". No biggie.
+That was an open ended brief, and it led to some of the most interesting periods of exploration and pondering in my career. As far as I'm aware the workings of the preexisting typography system are still cloaked by my NDA, but it was _essentially_ human-specified. As a reaction to this I defined my own brief as **"a system that can understand, select & apply typography with the nuance of an expert human designer"**. No biggie.
 
 ---- 
 
 ## Definitions
 Occasionally when I talk about working on AI typography people assume I'm designing new generative fonts. It's an absolutely fascinating area and maybe one I'll play around with eventually, but that assumption stems from a common misnomer. To clarify, before we get started and you get disappointed with this essay:
-**Typography:** the use of typefaces
+
+**Typography:** the use of typefaces  
 **Type design:** the creation of new typefaces
 
 Thanks to [Stephen Coles](http://www.fontbureau.com/blog/clear-definitions/) for a concise definition. If you're interested in using neural networks to _design typefaces_, check out Erik Bern’s excellent [Deep Fonts](http://erikbern.com/2016/01/21/analyzing-50k-fonts-using-deep-neural-networks/) project, an approximation & visual analysis of 50 000 fonts. That said, on to AI Typography - using computers to design with typefaces.
