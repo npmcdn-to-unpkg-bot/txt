@@ -1,12 +1,12 @@
 ---
 title: Taking The Robots To Design School, Part 1
-date: 2016-05-26
+date: 2016-05-25
 ---
 
 About a year ago I started working on merging typographic design and artificial intelligence. I'm writing the contents of my brain to hypertext right now, in May 2016: partially because it's fun to talk about, partially as journalling for my future self, and mostly because I want more people to think about these things.
 
 ## Background
-For as long as I’ve been a designer I’ve been captivated by mathematical purity in design systems; I'm always been a huge fan of Swiss design. Maybe my all-time favorite is [Karl Gerstner’s work in programmatic design](https://runemadsen.com/blog/karl-gerstner-designing-programmes/). In 2011 I had my a first quick shot at working on systemized algorithmic web layouts at Prismatic (RIP); then captivated by the 2014 article about [Flipboard’s layout algorithm](http://engineering.flipboard.com/2014/03/web-layouts/) I resolved to shift my design career towards abstractions and work on ((meta-)meta-)meta-design systems and tools to enable more powerful forms of thought amongst human designers.
+For as long as I’ve been a designer I’ve been captivated by mathematical purity in design systems. I've always been a huge fan of Swiss design; maybe my all-time favorite designer is Karl Gerstner with his work in [programmatic design](https://runemadsen.com/blog/karl-gerstner-designing-programmes/). In 2011 I had my a first quick shot at working on systemized algorithmic web layouts at Prismatic (RIP); then captivated by the 2014 article about [Flipboard’s layout algorithm](http://engineering.flipboard.com/2014/03/web-layouts/) I resolved to shift my design career towards abstractions and work on ((meta-)meta-)meta-design systems and tools to enable more powerful forms of thought amongst human designers.
 
 Rolling forward to spring 2015, I started working at The Grid - a startup working on AI-generated websites. For context, the product was somewhere around a Squarespace or Wix kind of deal - it allowed for non-designers to quickly create great looking websites. The twist was that instead of templates or themes, sophisticated design algorithms would work with the content to design a website custom to the user. Cool. As good a venue as any to explore design systems; I was tasked by the creative director and CEO to make the typography system 'better'.
 
@@ -24,7 +24,7 @@ Thanks to [Stephen Coles](http://www.fontbureau.com/blog/clear-definitions/) for
 
 ---- 
 
-Designing an AI system that could recreate a core discipline of a complex profession turned into a bit of a challenge. For one, I had to learn about AI and all of its disciplines, on the job, from first principles (I don't have a computer science background, and I was the only design-engineer on the project - we were spread super thin). At the time I was going for a daily evening walk around Pacific Heights to take a break from my screen, look at the sunset and mull over the enormity of the task. On one such walk an Alan Turing quote popped into mind. 
+Designing an AI system that could recreate a core discipline of a complex profession turned into a bit of a challenge. For one, I had to learn about AI and all of its disciplines, on the job, from first principles (I don't have a computer science background, andd I was the only design-engineer on the project - we were spread super thin). At the time I was going for a daily evening walk around Pacific Heights to take a break from my screen, look at the sunset and mull over the enormity of the task. On one such walk an Alan Turing quote popped into mind. 
 
 > Instead of trying to produce a programme (sic) to simulate the adult mind, why not rather try to produce one which simulates the child's? If this were then subjected to an appropriate course of education one would obtain the adult brain.
 > 
@@ -38,7 +38,7 @@ I believe in the intervening 65 years that methodology has largely been disprove
 
 A common theme of criticism whenever I talk about algorithmic design is that it’s too nuanced a discipline to recreate algorithmically. That creativity can't be reduced down to a series of rules (typography is the most rule-driven thing in the creative arts, c'mon!). Presumably that criticism is discounting how it's taught in design school - as a series of lessons applied to a lossy storage medium: the brains of hungover 18 year olds. Lots of us were them, at one point. Staggeringly, amongst the freshman preoccupation with partying, we also learnt how to design. Hopefully with more computationally attentive platforms, we'll get even better results.
 
-Design is absolutely teachable, and I have a 4 step process for teaching it to machines. The process is written about below in the context of typography but it's equally applicable to layout, color, and every other subdiscipline of graphic design.
+**Design is absolutely teachable, and I have a 4 step process for teaching it to machines**. The process is written about below in the context of typography but it's equally applicable to layout, color, and every other subdiscipline of graphic design.
 
 I've used a mix of pseudo-code and illustrations - apologies if it's too technical or not technical enough 🙏
 
@@ -89,7 +89,7 @@ Typefaces are vectors making any calculations super easy. _It's just geometry_. 
 
 With a reliable way to reason about typefaces I moved onto creating algorithms to label the features. Here are some examples:
 
-![](./robot-design-school-x-height.png "x-height")
+![](robot-design-school-x-height.png "x-height")
 
 The x-height is the height of the lowercase x; an easy place to start! To get a value normalizable across fonts (which may be drawn in incongruent sizes), we can record it as a percentage of the uppercase A. This tends to get values between ~0.45-0.8, which sounds about right.
 
@@ -99,7 +99,7 @@ The x-height is the height of the lowercase x; an easy place to start! To get a 
   (/ (char-height font :x) (char-height font :A)))
 ```
 
-![](./robot-design-school-contrast.png "contrast")
+![](robot-design-school-contrast.png "contrast")
 
 Certain characters really show off a font's contrast. Most notably, overlaying an 'O', 'o' or 'A' gives us a pretty clear sense of how fonts are diverging. The contrast can be expressed thus
 
@@ -108,7 +108,7 @@ Certain characters really show off a font's contrast. Most notably, overlaying a
   (/ (char-area font :O) (char-bounding-box font :O)))
 ```
 
-![](./robot-design-school-width.png "width")
+![](robot-design-school-width.png "width")
 
 Looking at characters that vary the most amongst changing font widths, 'M' and 'N' are exciting to observe, amongst a few others. We can't just measure their widths (because fonts are drawn at different sizes) so I grabbed the mean of the _ratio_ between their height & widths. cool.
 
@@ -122,13 +122,13 @@ And then an interesting topic came up. I was looking at some similar fonts in my
 
 A consistent rule of thumb when pairing typefaces is to go for those with sufficient contrast relative to each other. A pairing of Gotham and Proxima Nova would be exceptionally rare; a pairing of Gotham with an interesting serif would be more interesting.
 
-![](./robot-design-school-similarity.png "three different fonts that human designers understand as similar. how about machines?")
+![](robot-design-school-similarity.png "three different fonts that human designers understand as similar. how about machines?")
 
 Then there are times when you _would_ want certain attributes to be similar. Perhaps you'd like to pair otherwise-contrasting fonts with similar x-heights, for example.
 
 I created a _similarity score_, showing you the euclidean distance between arbitrary groups of properties. By default it displays the distance between every property of a font, but it can equally be used to show the difference between fonts just taking into consideration, say, `x-height` & `contrast`.
 
-![](./robot-design-school-euclidean.png "sorry")
+![](robot-design-school-euclidean.png "sorry")
 
 ```clojure
 (defn similarity [x y & attrs]
@@ -141,13 +141,13 @@ I created a _similarity score_, showing you the euclidean distance between arbit
 
 After creating a bunch of these algorithms, I ran it on some sample data, scaled the numbers between 0 & 1, and plotted the results.
 
-![](./robot-design-school-type-feature-table-1.png "Ordering 8 fonts by their similarity to Proxima Nova")
+![](robot-design-school-type-feature-table-1.png "Ordering 8 fonts by their similarity to Proxima Nova")
 
 I'd call that a result! Ordering by similarity, Proxima Nova & Gotham are indeed right next to each other whilst Didot is super far away. This is what I expected to happen, but it was great to see the code figure it out.
 
 Of course a dataset of 9 items is hardly exciting, so I went crazy and processed the whole Google Fonts repository.
 
-![](./robot-design-school-type-feature-table-2.png "Looking at > 800 fonts")
+![](robot-design-school-type-feature-table-2.png "Looking at > 800 fonts")
 
 Again, the results seemed to confirm how I hoped the code would work. Comparing the previews of the fonts to their scores we see the numbers matching up - fantastic!
 
@@ -157,11 +157,11 @@ A `<table>` isn't a type system, so I moved on to the first stage of my Design S
 
 Design is a series of rules, whether you realize it or not. There are some simple, explicit rules. Lines of text should be around 66 characters wide. Text colors should have appropriate contrast so as to be accessible. Widows and rivers in paragraphs of text should be avoided; the variations in a type scale reduced to provided juxtaposition to each other. These are the explicit rules; those which we can easily write books about.
 
-![](./robot-design-school-muller-brockmann.png "💞📚")
+![](robot-design-school-muller-brockmann.png "💞📚")
 
 There are also the implicit rules. The implicit rules are the sum of our experience as designers. Every project we've tackled, every thing that could have gone better, or worse; every silver bullet we've remembered. Every solution that didn't quite work at the time, but we'll pull out of our sleeves somewhere down the road.
 
-![](./robot-design-school-carson-brody.png)
+![](robot-design-school-carson-brody.png)
 
 Even those who scoff at modernist design and base their careers around breaking the rules have their own. secretly. David Carson has his rules, and so does Neville Brody. They might not be canonical, or even written down, but we each carry our own set of rules around with us. Frameworks for approaching design; a set of functions that transform brief into deliverables. They might not be visible on the surface, but we can dig and pluck them out.
 
@@ -169,11 +169,11 @@ Working on the premise of rules-based systems, I created a designer-facing API f
 
 If that sounds abstract; here are some example of predicate-based solvers that we use every day:
 
-![](./robot-design-school-finder.png "here are two common compositional, predicate-based finders. cool.")
+![](robot-design-school-finder.png "here are two common compositional, predicate-based finders. cool.")
 
 So this was cool - we could specify meta-rules like "show me fonts with these sort of properties", rather than "show me this font and this font" — understanding fonts at a higher level. "given this _sort of font_ as a headline, pair with fonts with these _sort of properties_ for body copy." "if a font _like this_ appears on the page, never pair it with a font _like this_". I think the actual rules as implemented are less exciting than the theory (because rules could be tweaked); the general idea is reasoning about typefaces on a higher-level than by names alone.
 
-![](./robot-design-school-selection.png "*that one*")
+![](robot-design-school-selection.png "*that one*")
 
 ```clojure
 (defn small-x-height?
@@ -205,7 +205,7 @@ So this was cool - we could specify meta-rules like "show me fonts with these so
 The plan with all of this was to expose an interface for designers to create and tweak the rules being fed into the system, but before too long I realized a huge part of the model was missing…
 
 ## Part 3: Macro Observation
-![](./robot-design-school-inspiration.png)
+![](robot-design-school-inspiration.png)
 
 Creating these rules was getting increasingly manual, and I was keen for a solution that learnt from the industry; relating practice back to theory. This is the third part of our model: macro observation.
 
@@ -213,11 +213,11 @@ As a student you have your heroes in the industry; historical and contemporary. 
 
 Some of my favorite studios as a student were Experimental Jetset, Spin, and Non-Format. I spent lots of drizzly London winter evenings in college poring over their work, trying to figure out how they achieved their individual aesthetics. Identifying the fonts they used and then researching to figure out why they worked. Looking at the colors they used and figuring out what kind of palettes they derived from. I'd never dream of copying their work in real projects, but that form of observation is hugely valuable as a pedagogical exercise. 
 
-![](./robot-design-school-inspiration-sites.png "two of my favorites")
+![](robot-design-school-inspiration-sites.png "two of my favorites")
 
 I modelled this form of learning by looking at how designers use & work in the real world. Some of my favorite typography-focused inspiration sites classify work by the typefaces used, building a rich database of the patterns and relationships in the medium. This could have been a manual process, but it was more exciting to write scrapers to grab the data for me. In any case some lines of code and a bunch of HTTP requests later I ended up with a great dataset of real-world font usage.
 
-![](./robot-design-school-network-graph.png)
+![](robot-design-school-network-graph.png)
 
 The most natural way to visualize this seemed to be as a node graph, drawing connections between fonts as they are used. It's pretty overwhelming to look at in this form, but the data is captivating and rich. 
 
@@ -232,7 +232,7 @@ If looking at the industry as a whole builds our understanding of trends on a hi
 
 We learn to do this in school, and in internships, and in our first roles as designers; the nascent interactions we have with designers a little older than us, and a lot. We learn equally from our peers, and those designers we look up to a few years older than ourselves, and also from our creative directors' & professors' own work.
 
-![](./robot-design-school-ravensbourne.png "Ravensbourne. Designers designing.")
+![](robot-design-school-ravensbourne.png "Ravensbourne. Designers designing.")
 
 As humans we build models of these other designers: as individuals, small groups, and larger communities. The memes that develop in a studio environment; the motifs that geographically proximate groups of designers share with the wider world and the things that differ. Amongst London design schools there was absolutely a 'Ravensbourne style' pitched against the approaches of students from Kingston, Chelsea, London College of Communication and Central St Martins. But then there was the 'London style' as a whole, too. There was British style; European style. Further afield, the '[Yale style](http://yalegraphicdesign.tumblr.com/)' is instantly recognizable. Outside of school there are cliques that share an understanding without being in the same physical space - trends amongst designers and illustrators that are visible on Dribbble and Behance and wherever else we go to admire each others' work.
 
@@ -255,7 +255,7 @@ Designer friends asking how they could use the system would no doubt be disappoi
 
 Looking at the current crop of design tools after taking a glimpse at the future is frustrating. There is a total lack of contextual and industrial awareness in our software. The tools manipulate strings, vectors and booleans; not design. But tools are the ripest place to affect change, so I'm building design tools that integrate intelligent algorithms with the design process; tools that try to make designers better by learning about what they're doing. What we're doing. Augmenting rather than replacing designers.
 
-![](./robot-design-school-similar-sites.png "for a certain subset of design, convergence is desirable")
+![](robot-design-school-similar-sites.png "for a certain subset of design, convergence is desirable")
 
 It should always be down to the designer to choose how to use these tools. Optimization is an interesting opportunity for algorithmic design; personally I have no particular goals for making the internet look more homogenous but it's completely valid for some disciplines of design. It doesn't have to be about convergence though; there are many ways to expose and use this data. Our tools could take us towards trends, or away from them. We can, right now, suggest a more popular font, but equally we can surface similar but undiscovered treasures for those looking to branch out from the mainstream. We can suggest, hint and correct; all built from solid design principles and the collective sum of our experience as designers. All this is within reach.
 
