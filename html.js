@@ -40,11 +40,6 @@ module.exports = React.createClass({
           {cssLink}
           <link rel="stylesheet" href="https://cdn.rawgit.com/isagalaev/highlight.js/master/src/styles/github.css" />
           <script dangerouslySetInnerHTML={ gosquared() } />
-          <script type="text/javascript" async
-            src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML"
-          >
-          </script>
-
         </head>
         <body className="landing-page">
           <div id="react-mount" dangerouslySetInnerHTML={{ __html: body }} />

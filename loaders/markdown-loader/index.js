@@ -1,5 +1,5 @@
 import frontMatter from 'front-matter'
-import kramed from 'kramed'
+import marked from 'marked'
 import classNames from 'classnames'
 import hljs from 'highlight.js'
 import objectAssign from 'object-assign'
@@ -25,7 +25,7 @@ const highlight = (str, lang) => {
   return ''
 }
 
-const renderer = new kramed.Renderer()
+const renderer = new marked.Renderer()
 
 const paragraphCx = classNames('lh-copy', 'measure', 'sans-serif')
 
@@ -87,7 +87,7 @@ renderer.image = (href, title, text) => {
   `
 }
 
-kramed.setOptions({
+marked.setOptions({
   renderer,
   highlight,
   sanitize: false,
@@ -97,7 +97,7 @@ kramed.setOptions({
 module.exports = function (content) {
   this.cacheable()
   const meta = frontMatter(content)
-  const body = kramed(meta.body)
+  const body = marked(meta.body)
   const result = objectAssign({}, meta.attributes, {
     body, wordCount: length(split(' ', content)),
   })
