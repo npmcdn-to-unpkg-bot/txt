@@ -6,6 +6,7 @@ import { prefixLink } from 'gatsby-helpers'
 import access from 'safe-access'
 import { config } from 'config'
 import include from 'underscore.string/include'
+import Newsletter from 'components/Newsletter'
 import Bio from 'components/Bio'
 import { both, compose, filter, map, path, pathEq, reject, reverse, sortBy } from 'ramda'
 
@@ -52,6 +53,7 @@ class BlogIndex extends React.Component {
       <DocumentTitle title={config.blogTitle}>
         <div className="sans-serif ph3">
           <Bio />
+          <Newsletter />
           <ul className="list pl0">
             {pageLinks}
           </ul>
