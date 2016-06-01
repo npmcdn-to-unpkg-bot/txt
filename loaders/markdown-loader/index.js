@@ -54,7 +54,7 @@ renderer.blockquote = (quote) =>
 
 // Block Level methods
 renderer.code = function (code, language) {
-  const out = this.options.highlight(code, language)
+  const out = highlight(code, language)
 
   const codeCx = classNames('code', 'dark-gray', {
     [`lang-${language}`]: !!language,
@@ -87,17 +87,18 @@ renderer.image = (href, title, text) => {
   `
 }
 
-kramed.setOptions({
-  renderer,
-  highlight,
-  sanitize: false,
-  smartypants: true,
-})
-
 module.exports = function (content) {
   this.cacheable()
+
+  const opt = {
+    renderer,
+    highlight,
+    sanitize: false,
+    smartypants: true,
+  }
+
   const meta = frontMatter(content)
-  const body = kramed(meta.body)
+  const body = kramed(meta.body, opt)
   const result = objectAssign({}, meta.attributes, {
     body, wordCount: length(split(' ', content)),
   })
