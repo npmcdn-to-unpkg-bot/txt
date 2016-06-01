@@ -80,7 +80,7 @@ renderer.image = (href, title, text) => {
   const figCaption = title && `<figcaption class="sans-serif f6 i gray">${title}</figcaption>`
   const t = `title='${title}'`
   return `
-    <figure class="mh0 mv4 relative left--2-ns">
+    <figure class="mh0 mv4 relative">
       <img src='${href}' alt='${text}' ${title && t} style='max-width:100%; height:auto;' />
       ${title ? figCaption : ''}
     </figure>
