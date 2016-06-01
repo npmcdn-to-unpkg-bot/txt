@@ -48,7 +48,7 @@ renderer.paragraph = (text) =>
   `<p class='${paragraphCx}'>${text}</p>`
 
 renderer.blockquote = (quote) =>
-  `<blockquote class='i bl ml0 pl4 mv4'>
+  `<blockquote class='i bl ml0 pl3 pl4-ns mv4'>
     ${quote}
   </blockquote>`
 
