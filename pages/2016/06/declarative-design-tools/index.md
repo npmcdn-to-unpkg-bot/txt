@@ -89,12 +89,9 @@ Lick continues, and the parallels sound hauntingly familiar:
 
 To me, the design process is **just** divergence and convergence; thinking and seeing. Brain and eyes. The middle bits; the exponential time increase between thinking and seeing—that's not design, it's repetitive manual labor. Some people see _that_ as design, but really it's getting in a position to think; _getting in a position to design_. Design is a game for our brains and our eyes.
 
-If we're the type of designer who likes to write computer code, we might start to draw analogies. There is a spectrum in programming paradigms from imperative to declarative
+If we're the type of designer who likes to write computer code, we might start to draw analogies. There is a spectrum in programming paradigms: from imperative to declarative.
 
 **Imperative programming** is telling the computer _how_ to calculate something. We give it step by step instructions—procedures—to get to the answer.
-
-**Declarative programming**, by contrast, focusses on _what_ we want to calculate - we don't concern ourselves with the details.
-
 
 Let's demonstrate this in JavaScript. Imagine we have a list of numbers, and want to square each of them, then add up the total.
 ```javascript
@@ -114,7 +111,10 @@ function sumOfSquares(nums) {
   return sum;
 }
 sumOfSquares([1, 2, 3, 4, 5]) // 55
- 
+```
+
+**Declarative programming**, by contrast, focusses on _what_ we want to calculate - we don't concern ourselves with the details.
+```javascript
 // declarative
 const square = a => a * a
 const add = (a, b) => a + b
@@ -135,26 +135,25 @@ const sumOfSquares = pipe(
 sumOfSquares([1, 2, 3, 4, 5]) // 55
 ```
 
-The declarative example is neat, composable and super readable; the imperative one messy and full of manual array shuffling. We can extend our example to do more: let's now get rid of any squared numbers that are over 36, then only pick the first 3 numbers from that list, and then sum the list as usual.
+The declarative example is neat, composable and super readable; the imperative one messy and full of manual array shuffling.
 
-Why would we want to do this? Because we can, and I'm trying to prove a point!
 
-```javascript
-// declarative
-const superContrivedSecondExample = pipe(
-  map(square), // square all the numbers again
-  reject(x => x > 36), // reject any number over 36
-  take(3), // grab the first 3 results
-  sum // sum them as usual
-)
- 
-superContrivedSecondExample([1, 2, 10, 12, 3, 5, 4, 8, 6])
-// 14
-```
 
-I don't even want to think about how I'd rewrite the imperative example to come up with that (but I'm sure it would be very confusing!); in the declarative style it's simple. We're telling the computer what we want to do and it pieces together the 'how'.
 
-This might seem tangential to the example of our poor junior designer copying & pasting artboards until RSIl sets in, but it's an important headspace to be in whilst considering our design tooling. **With our current tools we're telling the computer how to design the vision we have in our head** (by tapping on our input devices for every element on the screen); **in our future tools we will tell our computers what we want to see, and let them figure out how to move elements around to get there.** 
+
+
+
+
+
+
+
+
+
+
+
+
+
+This might seem tangential to the example of our poor junior designer copying & pasting artboards until RSI sets in, but it's an important headspace to be in whilst considering our design tooling. **With our current tools we're telling the computer how to design the vision we have in our head** (by tapping on our input devices for every element on the screen); **in our future tools we will tell our computers what we want to see, and let them figure out how to move elements around to get there.** 
 
 ### A smattering of set theory
 
