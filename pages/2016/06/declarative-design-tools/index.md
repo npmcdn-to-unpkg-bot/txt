@@ -15,8 +15,7 @@ Design is a process of divergence and convergence. Constrain your divergent thou
 
 ### Our bicycles
 
-Computers are tools for making us better than ourselves. The Steve Jobs quote about computers being [_bicycles for the mind_](https://www.youtube.com/watch?v=ob_GX50Za6c) has been abused by wannabe TED presenters, and UI designers with "Stay Hungry, Stay Foolish " in their Twitter bios, but it's fundamentally true.
-
+Computers are tools for making us better than ourselves. The Steve Jobs quote about computers being [_bicycles for the mind_](https://www.youtube.com/watch?v=ob_GX50Za6c) is so common as to lose meaning nowadays, but it's a fantastic observation.
 Computers are extensions of ourselves; tools that let us work better, faster and smarter. Humans aren't likely to spawn wings, dorsal fins or gain the powers of invisibility any time soon, but in place of biological evolution we have something more enticing: evolving ourselves through our machines and our code. **We can decide how we want our mental capabilities to evolve and steward that change ourselves.** In this information age our text editors are the means of production, and the means of our transformation. 
 
 Our design tools haven't really changed since the introduction of the Mac, though. Over the last 30 years we've had flings with Quark and Quartz Composer, Corel Draw and Creative Suite, Sketch and SketchUp, Photoshop and Freehand and Fireworks and Framer and Figma, but they all operate on a fundamentally similar principle.
@@ -30,7 +29,7 @@ This is a marvelous feat! We have a direct mapping between design in our heads a
 ### Tales from the design studio
 Grab a fistful of twenty-sided dice; it's time for some roleplaying! We're playing a game of _Designers & Deadlines_; a captivating way for people who enjoy arguing about 'long shadows' and 'skeuomorphs' to spend an afternoon.
 
-**DUNGEON MASTER:** Our heroes are a Level 99 Hovering Art Director, and a Level 2 Junior Designer. The setting: a design studio. The walls appear to be made of exposed brick; clearly geographically placing us in Shoreditch or Williamsburg or The Mission or Silver Lake or Kreuzberg or Hawthorne or Fitzroy or Vesterbro or Södermalm or…
+**DUNGEON MASTER:** Our heroes are a Level 99 Hovering Art Director, and a Level 2 Junior Designer. The setting: a design studio. The walls appear to be made of exposed brick; clearly geographically placing us in Shoreditch or Williamsburg or The Mission or Kreuzberg or Södermalm or…
 
 **HOVERING ART DIRECTOR:** this could be anywhere.
 
@@ -64,13 +63,13 @@ Fantastic. Time to get to the digital drawing board.
 
 Using our experience and intuition, we come up with lots of options in our head, and then rationalize them in our design tool du jour. We come up with hypotheses of things that might look good, then run experiments to see what actually works.
 
-Our laboratories are software and rather than faffing with hydrocarbons and making explosions, our experiments revolve around copying, pasting, duplicating artboards, changing a detail, trying to remember what we were doing, getting bored or distracted; repeating all through the project.
+Our laboratories are software and rather than faffing with hydrocarbons and making explosions, our experiments revolve around copying, pasting, duplicating artboards, changing a detail, trying to remember what we were doing, getting bored or distracted.
 
 We can't skip this stage; we _need_ to see our hypotheses on a screen or printed. **No designer, no matter how talented or experienced, can design entirely in their head.**
 
 J. C. R. Licklider’s [Man-Computer Symbiosis](http://groups.csail.mit.edu/medg/people/psz/Licklider.html) describes our current workflows with remarkable prescience:
 
-> About 85 per cent of my "thinking" time was spent getting into a position to think, to make a decision, to learn something I needed to know. Much more time went into finding or obtaining information than into digesting it. **Hours went into the plotting of graphs**, and other hours into instructing an assistant how to plot. **When the graphs were finished, the relations were obvious at once, but the plotting had to be done in order to make them so.** At one point, it was necessary to compare six experimental determinations of a function relating speech-intelligibility to speech-to-noise ratio. No two experimenters had used the same definition or measure of speech-to-noise ratio. Several hours of calculating were required to get the data into comparable form. **When they were in comparable form, it took only a few seconds to determine what I needed to know.**
+> About 85% of my "thinking" time was spent getting into a position to think, to make a decision, to learn something I needed to know. Much more time went into finding or obtaining information than into digesting it. **Hours went into the plotting of graphs**, and other hours into instructing an assistant how to plot. **When the graphs were finished, the relations were obvious at once, but the plotting had to be done in order to make them so.** At one point, it was necessary to compare six functions relating speech-intelligibility to speech-to-noise ratio. Several hours of calculating were required to get the data into comparable form. **When they were in comparable form, it took only a few seconds to determine what I needed to know.**
 
 Lick was writing in 1960 (fifty-six years ago), in the early years of digital computing. The first experiments into GUIs wouldn't happen at Xerox PARC for over a decade; the release of the Apple ][ (and with it the widespread adoption of personal computers by everyday knowledge workers) was 17 years away.
 
@@ -78,7 +77,7 @@ Lick was writing in 1960 (fifty-six years ago), in the early years of digital co
 
 I'm dwelling on the dates because they're important. Though Lick might not have been fully-satisfied by our current tools, the past 56 years have blessed us with a wealth of staggering innovation following his lead. Considering the problems he was writing about—laborious paper plotting of the results of scientific experiments—our spreadsheets and MATLAB simulations surely seem like wizardry.
 
-And yet…our design process is still limited by our one-at-a-time, meatspace interactions bridging between our brain and devices that have unbounded computational power. **Our brains and computers are fast; our hands, mice and keyboards are slow.**
+And yet…our design process is still limited by our meatspace interactions bridging between our brains and devices that have unbounded computational power. **Our brains and computers are fast; our hands, mice and keyboards are slow.**
 
 Designing 20,000 variations of a component is a low figure too - that's only a few fonts and a few sizes. Think of all the possible permutations for every element in the last real project you designed!
 
@@ -86,11 +85,16 @@ Of course there aren't enough flat whites in the world to keep anyone focused en
 
 Lick continues, and the parallels sound hauntingly familiar:
 
-> Throughout the period I examined, in short, my "thinking" time was devoted mainly to activities that were essentially clerical or mechanical: searching, calculating, plotting, transforming, determining the logical or dynamic consequences of a set of assumptions or hypotheses, preparing the way for a decision or an insight. Moreover, **my choices of what to attempt and what not to attempt were determined to an embarrassingly great extent by considerations of clerical feasibility, not intellectual capability.**
+> My "thinking" time was devoted mainly to activities that were essentially clerical or mechanical: searching, calculating, plotting, transforming, determining the logical or dynamic consequences of a set of assumptions or hypotheses, preparing the way for a decision or an insight. Moreover, **my choices of what to attempt and what not to attempt were determined to an embarrassingly great extent by considerations of clerical feasibility, not intellectual capability.**
 
 To me, the design process is **just** divergence and convergence; thinking and seeing. Brain and eyes. The middle bits; the exponential time increase between thinking and seeing—that's not design, it's repetitive, manual labor. Some people see _that_ as design, but really it's getting in a position to think; _getting in a position to design_. Design is a game for our brains and our eyes.
 
-If we're the type of designer who likes to write computer code, we might start to draw analogies. There is a spectrum in programming paradigms from imperative to declarative; two very different ways of interacting with our computers. Declarative programming is 'telling the computer what to do' whilst imperative programming is 'telling it how to do it'.
+If we're the type of designer who likes to write computer code, we might start to draw analogies. There is a spectrum in programming paradigms from imperative to declarative
+
+**Imperative programming** is telling the computer _how_ to calculate something. We give it step by step instructions—procedures—to get to the answer.
+
+**Declarative programming**, by contrast, focusses on _what_ we want to calculate - we don't concern ourselves with the details.
+
 
 Let's demonstrate this in JavaScript. Imagine we have a list of numbers, and want to square each of them, then add up the total.
 ```javascript
@@ -154,7 +158,7 @@ This might seem tangential to the example of our poor junior designer copying & 
 
 ### A smattering of set theory
 
-The cool thing is this isn't a difficult problem to solve. Since we came to the unanimous decision that designers should code, we've learnt that computers have all sorts of fancy and esoteric concepts like _variables_, _loops_, and _arrays_ which we can use to build tools that fix our design process.
+The cool thing is this isn't a difficult problem to solve: computers have all sorts of fancy and esoteric concepts like _variables_, _loops_, and _arrays_ which we can use to build tools that fix our design process.
 
 Time for a quick math lesson. Here are some sets:
 
