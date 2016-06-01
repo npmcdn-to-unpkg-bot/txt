@@ -139,7 +139,7 @@ The declarative example is neat, composable and super readable; the imperative o
 
 Why would we want to do this? Because we can, and I'm trying to prove a point!
 
-`javascript
+```javascript
 // declarative
 const superContrivedSecondExample = pipe(
   map(square), // square all the numbers again
@@ -150,7 +150,7 @@ const superContrivedSecondExample = pipe(
  
 superContrivedSecondExample([1, 2, 10, 12, 3, 5, 4, 8, 6])
 // 14
-`
+```
 
 I don't even want to think about how I'd rewrite the imperative example to come up with that (but I'm sure it would be very confusing!); in the declarative style it's simple. We're telling the computer what we want to do and it pieces together the 'how'.
 
