@@ -27,9 +27,7 @@ Canvas, document, direct property manipulation. Newer tools are skirmishing over
 
 This is a marvelous feat! We have a direct mapping between design in our heads and and design on screen. **Given the requisite technical skills, we can bargain with our computers to produce our wildest creative visions.** Rather than speccing out an idea for a poster and waiting days or weeks for a printer—a person, not temperamental inkjet contraption—to realize it (like our Swiss heroes had to), we have a near-instant feedback loop. We think and we artwork: a _one to one mapping_. Let that sink in for a second; we'll come back to it later.
 
-> 
-
-## Our Process
+### Tales from the design studio
 Grab a fistful of twenty-sided dice; it's time for some roleplaying! We're playing a game of _Designers & Deadlines_; a captivating way for people who enjoy arguing about 'long shadows' and 'skeuomorphs' to spend an afternoon.
 
 **DUNGEON MASTER:** Our heroes are a Level 99 Hovering Art Director, and a Level 2 Junior Designer. The setting: a design studio. The walls appear to be made of exposed brick; clearly geographically placing us in Shoreditch or Williamsburg or The Mission or Silver Lake or Kreuzberg or Hawthorne or Fitzroy or Vesterbro or Södermalm or…
@@ -58,13 +56,11 @@ Grab a fistful of twenty-sided dice; it's time for some roleplaying! We're playi
 
 **GM:** I'm so sorry.
 
-**HAD:** Just navigate the Cave of People Not Really Working From Beanbags to the Hall of Free Beverages; for there is a chest of complementary Red Bulls. If I remember anything from your website, you are 80% good at Photoshop, 65% good at HTML5 and 90% good at caffeine, so this should be no problem.
 
-**JD:** I quit
 
 Fantastic. Time to get to the digital drawing board.
 
-## 10,000 hours of duplicating artboards
+### Our brains and our eyes
 
 Using our experience and intuition, we come up with lots of options in our head, and then rationalize them in our design tool du jour. We come up with hypotheses of things that might look good, then run experiments to see what actually works.
 
@@ -88,11 +84,11 @@ Designing 20,000 variations of a component is a low figure too - that's only a f
 
 Of course there aren't enough flat whites in the world to keep anyone focused enough to _really_ design 20,000 variations of a component, so we compromise. We skimp. **We fall short of fully exploring the combinatorial space, because our design tools haven't really changed since 1984.**
 
-Lick continues, and the parallels sound hauntingly familiar.
+Lick continues, and the parallels sound hauntingly familiar:
 
 > Throughout the period I examined, in short, my "thinking" time was devoted mainly to activities that were essentially clerical or mechanical: searching, calculating, plotting, transforming, determining the logical or dynamic consequences of a set of assumptions or hypotheses, preparing the way for a decision or an insight. Moreover, **my choices of what to attempt and what not to attempt were determined to an embarrassingly great extent by considerations of clerical feasibility, not intellectual capability.**
 
-To me, design is **just** divergence and convergence; thinking and seeing. Brain and eyes. The middle bits; the exponential time increase between thinking and seeing—that's not design, it's repetitive, manual labor. Some people see _that_ as design, but really it's getting in a position to think; _getting in a position to design_. Design is a game for our brains and our eyes.
+To me, the design process is **just** divergence and convergence; thinking and seeing. Brain and eyes. The middle bits; the exponential time increase between thinking and seeing—that's not design, it's repetitive, manual labor. Some people see _that_ as design, but really it's getting in a position to think; _getting in a position to design_. Design is a game for our brains and our eyes.
 
 If we're the type of designer who likes to write computer code, we might start to draw analogies. There is a spectrum in programming paradigms from imperative to declarative; two very different ways of interacting with our computers. Declarative programming is 'telling the computer what to do' whilst imperative programming is 'telling it how to do it'.
 
@@ -156,7 +152,7 @@ I don't even want to think about how I'd rewrite the imperative example to come 
 
 This might seem tangential to the example of our poor junior designer copying & pasting artboards until RSI sets in, but it's an important headspace to be in whilst considering our design tooling. **With our current tools we're telling the computer how to design the vision we have in our head** (by tapping on our input devices for every element on the screen); **in our future tools we will tell our computers what we want to see, and let them figure out how to move elements around to get there.** 
 
-
+### A smattering of set theory
 
 The cool thing is this isn't a difficult problem to solve. Since we came to the unanimous decision that designers should code, we've learnt that computers have all sorts of fancy and esoteric concepts like _variables_, _loops_, and _arrays_ which we can use to build tools that fix our design process.
 
@@ -227,20 +223,15 @@ Whilst this multiplicative design gives us a huge benefit, we don't want to get 
 
 In my experiments the ideal range of permutations to explore at each stage is around 4-64. This is a mix of cognition and screen real estate - we can't comprehend many more variations anyway, but we also run out of room to display them on. Plugging in two 27" monitors helps, but I'm more excited by the possibility of AR and VR design tools that let permutations escape the confines of our screens and roam free across the walls in our offices.
 
-**The entire workflow in a permutational design tool might surface many thousands of permutations, but they're experienced over a recurrent process of diverging & converging.**
+**The entire workflow in René might surface many thousands of permutations, but they're experienced over a recurrent process of diverging & converging.**
 
-### Naming things
-I'm still hashing out terminology, but I see the shift towards declarative tooling echoed in the prototypes I see my friends building.
 
-!!! - something about Brian's tool, Dazzle? Say how it's a _declarative_ tool but not a _permutational_ one. 
 
-Within **Declarative Tooling**, René is exploring a subset: what I'd label **Permutational Tooling**.
 
-> The human brain is fundamentally a pattern-matching machine, easily outperforming any machine we can build — for certain kinds of patterns. With visual patterns, we win hands-down. With logical inferences, we're slow and clumsy. We are human beings, and our tools should play to our strengths.
-> 
-> — Brett Victor, [Ladder of Abstraction](http://worrydream.com/LadderOfAbstraction/)
 
-I'm not certain that we will 'win hands-down' at visual pattern matching for the long-term future, but for 2016 humans have got that ground covered. We can build tools to aid and assist us, whilst still giving us control and letting us do what we do best.
+
+
+
 
 [You can play with René right now](http://rene.jon.gold). It's not 'finished', but I couldn't really finish this post without a demo, could I? Some things to note:
 - Right now, you can only edit one of two files: an article preview, or a button. I've used René to design full websites, but I'm limiting the scope of the demo right now. If you read Taking The Robots To Design School you might be able to piece together why ;)
