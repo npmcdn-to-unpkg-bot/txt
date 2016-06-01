@@ -242,8 +242,9 @@ Within **Declarative Tooling**, René is exploring a subset: what I'd label **Pe
 
 I'm not certain that we will 'win hands-down' at visual pattern matching for the long-term future, but for 2016 humans have got that ground covered. We can build tools to aid and assist us, whilst still giving us control and letting us do what we do best.
 
-You can play with René right now. It's not 'finished', but it's fun to click around. Some things to note:
+[You can play with René right now](http://rene.jon.gold). It's not 'finished', but I couldn't really finish this post without a demo, could I? Some things to note:
 - Right now, you can only edit one of two files: an article preview, or a button. I've used René to design full websites, but I'm limiting the scope of the demo right now. If you read Taking The Robots To Design School you might be able to piece together why ;)
 - The font list is loaded with Google Fonts; you can also use any local fonts by typing them in.
 - It's built with React, Redux, Ramda and Flow - all the modern favorites.
-- Have fun!
+
+[Have fun](http://rene.jon.gold), and let me know what you think on Twitter!
