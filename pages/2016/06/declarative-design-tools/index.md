@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Declarative Design Tools
-date: 2016-06-01
-published: false
+date: 2016-06-02
 ---
 
 Design is a process of divergence and convergence.
