@@ -1,0 +1,329 @@
+url: http://jon.gold
+title: Jon Gold - Designer & Engineer
+subtitle: '@jongold'
+author: Jon Gold
+simple_search: http://google.com/search
+
+side_projects:
+  - title: René
+    description: Next-generation permutational design tool - press coming soon.
+    when: April 16
+  - title: Cher
+    description: Artificial Intelligence-powered design tool - press coming soon.
+    when: April 16
+  - title: jon.gold
+    url: http://jon.gold
+    description: Very successful new personal site
+    when: Feb 16
+  - title: Paz
+    url: http://www.paz.sh
+    description: Continuous Deployment software for production environments.
+    when: Aug 14
+  - title: ohmygod
+    url: http://jongold.github.io/ohmygod/
+    when: June 13
+    description: Resistor calculator app for iPhone
+
+recent_projects:
+  - title: Help Me Write
+    url: http://helpmewrite.co
+    description: Involve your readers in your writing
+  - title: Bitsy
+    url: http://bitsywebsite.s3-website-us-east-1.amazonaws.com/
+    description: Sell your digital things &dagger;
+  - title: Listerly
+    url: http://listerly.co
+    description: Make lists of people
+  - title: Hire My Friend
+    url: http://hiremyfriend.io
+    description: Get your friends the job they deserve
+  - title: Attending
+    url: http://attending.io
+    description: Free events, done better
+
+old_projects:
+  - title: Prismatic
+    url: http://getprismatic.com
+  - title: The Amazings
+    url: http://theamazings.com
+
+talks:
+  - where: Pause Fest
+    when: 10th Feb 16
+    location: Melbourne, Australia
+    title: How To Design For 50,000 Websites At Once
+    url: https://www.youtube.com/watch?v=S6ha3Mp7toM
+  - where: ASOS UI
+    location: London
+    when: 13th Jan 16
+    title: The Cascade
+    url: https://ti.to/asos/asosui-2
+  - where: Chicago Open Source Open Mic
+    when: 5th Nov 15
+    location: Chicago
+    title: Functional CSS
+    url: http://www.meetup.com/Chicago-Open-Source-Open-Mic/events/225858615/
+  - where: Hacker News
+    location: London
+    when: 28th Jan 15
+    title: A New Architecture
+    url: https://vimeo.com/118895502
+  - where: Web Dev Conf
+    location: Bristol
+    when: 10th Oct 14
+    title: A New Architecture
+    url: http://2014.webdevconf.com
+  - where: From The Front
+    location: Bologna, Italy
+    when: 19th Sep 14
+    title: A New Architecture
+    #url: http://2014.fromthefront.it/
+    url: http://blog.fromthefront.it/home/we-make-the-internet
+  - where: Front-end London
+    location: London
+    when: 28th Sep 13
+    title: A New Architecture
+    url: http://lanyrd.com/2013/feloneday/
+  - where: UX Café
+    location: London
+    when: 23rd July 13
+    title: Making At Makeshift
+    # url: http://www.meetup.com/uxcafe/events/125201692/
+    url: https://www.youtube.com/watch?v=Ucm1DdSlDTM
+  - where: "Design & Banter"
+    when: 3rd June 13
+    location: London
+    title: What I Wish I Knew
+    url: https://web.archive.org/web/20130607121935/http://designandbanter.com/
+  - where: "Microsoft Ubelly"
+    when: 15th Feb 12
+    title: Lightning Talk
+    location: London
+    url: http://www.ubelly.com/2012/02/ignite-ubelly-speaker-line-up-announced/
+
+experience:
+  - company: The Grid
+    when: April 15–Feb 16
+    url: https://thegrid.io/
+    title: Designer / Engineer
+    description: Worked on the world's first Artificial Intelligence website builder - I was responsible for using Machine Learning & statistical analysis algorithms to teach the systems professional-level typographic knowledge & nuance, and built user interfaces & design tools to interfact with them.
+    press:
+      - url: http://thenextweb.com/dd/2015/07/31/this-is-what-the-grids-ai-website-builder-looks-like/
+        title: The Next Web
+      - url: http://www.fastcodesign.com/3044670/how-the-grid-will-automate-web-design-without-killing-the-designer
+        title: Fast Company
+      - url: http://www.aftonbladet.se/partnerstudio/digitalalivet/article21876245.ab
+        title: Afton Bladet (Swedish)
+      - url: http://www.tractor.edu.au/news/how-ai-will-redesign-web-design
+        title: Tractor Education
+      - url: https://theplusones.com/melbourne/2016/02/11/pause-festival-2016/
+        title: The Plus Ones
+      - url: https://bugherd.com/blog/pausefest-2016-creative-tech-days/
+        title: Bug Herd
+      - url: https://medium.com/@georgiebatt/my-refresher-on-the-things-that-matter-409c853631ac#.swr6lbxnt
+        title: Medium
+      - url: https://www.youtube.com/watch?v=MFz6D1PiCS8
+        title: Discover Your Future Self
+      - url: http://chrislema.com/website-ai-arrived/
+        title: Has Website AI Arrived?
+      - url: http://www.psfk.com/2015/09/artificial-intelligence-web-design-platform-the-grid-website-builder.html
+        title: pfsk
+
+
+  - company: Internet & Things Ltd
+    when: May 14–April 15
+    title: Principal
+    description: 'Independent full-service design &amp; development shop; specialising in prototyping for web &amp; iOS applications. Clients included <a class="gray" href="http://www.sequoiacap.com/">Sequoia Capital</a>’s Creative Lab, various projects subcontracting for <a class="gray" href="http://siberia.io">Siberia.io</a>, <a class="gray" href="http://www.yld.io/">YLD!</a> &amp; YCombinator-backed <a class="gray" href="https://webflow.com/">Webflow</a>.'
+
+  - company: Makeshift
+    when: Jan 13–May 14
+    url: http://makeshift.io/
+    title: Designer / Engineer
+    description: 'First employee; work responsibilities included ideation, product strategy, design &amp; development for a range of products &amp; prototypes: notably <a class="gray" href="http://hiremyfriend.io">Hire My Friend</a> (which I founded & led development of); also worked on <a class="gray" href="http://attending.io">Attending</a>, <a class="gray" href="http://bitsy.io">Bitsy</a> &amp; <a class="gray" href="http://listerly.co">Listerly</a>. Our product Linkydink was used for the initial prototype of Product Hunt, now a very successful multi-million dollar company. Nominated for Young Designer of the Year in the Net Awards.'
+    press:
+      - url: http://newsfeed.time.com/2013/07/22/how-to-job-hunt-secretly/
+        title: TIME
+      - url: http://thenextweb.com/entrepreneur/2013/07/17/want-a-new-job-but-dont-want-to-alert-your-current-boss-hire-my-friend-may-well-be-for-you/
+        title: The Next Web
+      - url: http://www.fastcompany.com/3014524/fast-feed/hire-my-friends-makes-sure-your-boss-doesnt-find-out-youre-job-hunting
+        title: Fast Company
+      - url: http://techcrunch.com/2013/07/17/new-london-startup-lab-makeshift-gives-birth-to-its-first-mvp-hiremyfriend/
+        title: TechCrunch
+      - url: http://www.psfk.com/2014/04/hire-my-friend-anonymous-recruiting.html
+        title: pfsk
+      - url: http://www.lifehacker.co.uk/2014/07/08/hire-friend-connects-uk-developers-jobs-cool-startups
+        title: LifeHacker
+      - url: http://www.pocket-lint.com/news/129012-website-of-the-day-hire-my-friend
+        title: PocketLint
+      - url: http://www.appvita.com/2014/04/25/stepsie-making-projects-happen/
+        title: AppVita
+      - url: http://jobmarketmonitor.com/2014/03/28/job-search-hire-my-friend-by-a-london-startup/
+        title: JobMarketMonitor
+      - url: http://wersm.com/hire-my-friend-the-anonymous-social-job-board/
+        title: We Are Social Media
+
+  - company: Evently
+    when: April 12–Dec 12
+    title: Designer
+    description: Design & front-end development across product & marketing.
+
+  - company: Freelance
+    when: Oct 11–March 12
+    title: Designer
+    description: 'Design &amp; front-end development for clients including <a class="gray" href="http://www.sidekickstudios.net/work/the-amazings">Sidekick Studios</a>, <a class="gray" href="http://www.techstars.com/program/locations/london/">Tech Stars London</a> &amp; <a class="gray" href="http://www.wazoku.com/">Wazoku</a>.'
+
+  - company: Prismatic
+    when: May 11–Sep 11
+    title: Designer
+    description: Branding, marketing & product design.
+    press:
+      - url: http://bits.blogs.nytimes.com/2012/04/03/prismatic-hopes-to-offer-a-new-category-of-social-news/?_r=0
+        title: New York Times
+      - url: http://techcrunch.com/2012/05/16/prismatic-user-profiles/
+        title: TechCrunch
+      - url: http://www.theatlantic.com/technology/archive/2012/04/twitter-without-the-twitter-feed/256473/
+        title: The Atlantic
+      - url: https://gigaom.com/2012/05/03/prismatic-wants-to-be-the-newspaper-for-a-digital-age/
+        title: GigaOm
+
+  - company: Wylie Design
+    when: July 10
+    url: http://wylie.co.uk/
+    title: Design Intern
+  - company: Saatchi & Saatchi Design
+    url: http://www.saatchi-design.co.uk/
+    when: Dec 09, Aug 10
+    title: Design Intern
+  - company: Tank Magazine
+    when: Sep 09
+    url: http://tankmagazine.com/
+    title: Design Intern
+  - company: Printing Progress
+    when: March 09–Aug 09
+    title: Graphic Designer
+  - company: Clever Design
+    title: Web Designer
+    when: June 08–Aug 08
+
+podcasts:
+  - title: 'Does Not Compute #25'
+    when: March 16
+    url: http://spec.fm/podcasts/does-not-compute/33746
+  - title: 'Design Details #114'
+    when: March 16
+    url: http://spec.fm/podcasts/design-details/32292
+  - title: Interview with FifteenSeconds.co (German)
+    when: Dec 15
+    url: http://fifteenseconds.co/so-funktioniert-dezentralisiertes-arbeiten-bei-the-grid-und-automattic/
+  - title: 'Design Details #43'
+    when: July 15
+    url: https://designdetails.simplecast.fm/45
+  - title: Hack To Start
+    when: Sep 15
+    url: http://hacktostart.com/jon-gold/
+  - title: "CreativeBloq: Jon Gold on working on projects you've always wanted to exist"
+    when: Feb 14
+    url: http://www.creativebloq.com/netmag/jon-gold-working-projects-youve-always-wanted-exist-21410703
+  - title: The Start
+    when: Feb 14
+    url: http://www.thestart.fm/interviews/the-punk-designer
+  - title: Upfront
+    when: April 13
+    url: http://upfrontpodcast.com/2013/04/05/episode11.html
+  - title: Offscreen Magazine
+    when: 2013
+    url: "http://www.offscreenmag.com/"
+  - title: The Industry
+    when: March 13
+    url: http://theindustry.cc/2013/03/22/an-interview-with-jon-gold/
+  - title: Instant Bight
+    when: May 12
+    url: http://instantbight.com/instantbight/2012/05/20/interview-with-jon-gold
+
+notable_posts:
+  - title: Functional Programming, CSS & Your Sanity
+    url: "http://jon.gold/2015/07/functional-css/"
+    when: July 15
+  - title: .net magazine
+    url: "http://www.creativebloq.com/net-magazine"
+    when: July 15
+  - title: Skyscrapes & Sandcastles
+    url: "http://jon.gold/2014/07/skyscrapers-sandcastles/"
+    when: July 14
+  - title: Everyone Does Everything
+    url: "https://medium.com/words-about-design/12e0882c51d1"
+    when: May 13
+  - title: Little Big Wins
+    url: "https://medium.com/words-about-design/d7f4fa67de64"
+    when: May 13
+  - title: Designing Open Source
+    url: "https://medium.com/words-about-design/e3adc220cfa7"
+    when: April 13
+  - title: Insatiable Curiosity
+    url: "https://medium.com/lets-make-things/a23254f8b75e"
+    when: April 13
+  - title: "Hack Design: Responsive Typography In Action"
+    url: "https://hackdesign.org/lessons/7"
+    when: Jan 13
+  - title: The Metaphors Breaking The Future
+    url: "http://jon.gold/2011/10/the-metaphors-breaking-the-future/"
+    when: Oct 11
+
+misc:
+  - title: "CSS Design Awards: Site of the Year Judge"
+    url: "http://www.cssdesignawards.com"
+    when: 2016
+  - title: "CSS Design Awards: Site of the Month Judge"
+    url: "http://www.cssdesignawards.com"
+    when: 2016
+  - title: Adobe Creative Jam Judge
+    url: "http://adobe.com"
+    when: Dec 15
+  - title: HybridConf Design Panel
+    url: "https://attending.io/events/context"
+    when: Nov 15
+  - title: ".net Awards Young Designer of the Year: Nomination"
+    url: "http://thenetawards.com"
+    when: June 13
+  - title: Seedcamp Hackathon Judge
+    url: "http://seedcamp.com"
+    when: Feb 13
+  - title: Lean Startup Machine workshop mentor & judge
+    url: https://www.leanstartupmachine.com/
+    when: Jan 13
+
+prose:
+  rooturl: '_posts'
+  siteurl: 'http://jon.gold'
+  relativeLinks: 'http://jon.gold/links.jsonp'
+  media: 'public'
+  # ignore:
+  #   - index.md
+  #   - _config.yml
+  #   - /_layouts
+  #   - /_includes
+  metadata:
+    _posts:
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          value: ""
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "post"
+      - name: "header-img"
+        field:
+          element: "text"
+          label: "Header Image"
+      - name: "published"
+        field:
+          element: "hidden"
+          value: "false"
+    _posts/static:
+      - name: "permalink"
+        field:
+          element: "text"
+          label: "Permalink"
+          value: ""
